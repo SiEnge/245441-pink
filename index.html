@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body class="page">
+  <header class="main-header">
+    <div class="main-header__top">
+      <a class="main-header__logo" href="index.html">Пинк</a>
+      <button class="main-header__menu-trigger"></button>
+    </div>
+    <nav class="main-menu main-menu--hidden">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a href="index.html">Главная</a></li>
+        <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-menu__item"><a href="contest.html">Конкурс</a></li>
+        <li class="main-menu__item"><a href="academy.html">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-page">
+    <article class="download">
+      <a class="download__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
+      <a class="download__link download__link--apple" href="http://www.apple.com/ru/itunes/">Apple</a>
+      <a class="download__link download__link--android" href="https://play.google.com/store">Android</a>
+      <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone">Windows</a>
+      <p class="download__text">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </article>
+    <section class="information">
+      <div class="information__intro">
+        <h3 class="information__title">Устали от серости мегаполиса?</h3>
+        <h3 class="information__title">Нам есть, что вам предложить!</h3>
+      </div>
+      <ul class="information-list">
+        <li class="information__item">
+          <h3 class="information__name">Поднимает настроение</h3>
+          <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+        </li>
+        <li class="information__item">
+          <h3 class="information__name">Меняет мир вокруг</h3>
+          <p class="information__text">Сделайте снимой и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="information__item">
+          <h3 class="information__name">Заводит новых друзей</h3>
+          <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+      <img class="information__img" src="http://placehold.it/162x330" alt="Пример работы приложения" width="162" height="330">
+    </section>
+    <article class="feedback">
+      <!-- Удалю, когда буду делать на JS :) а пока так
+      <input class="slider__input" type="radio" name="feedback" id="feedback-input-1" checked>
+      <input class="slider__input" type="radio" name="feedback" id="feedback-input-2">
+      <input class="slider__input" type="radio" name="feedback" id="feedback-input-3"> -->
+      <blockquote class="feedback-item">
+        <cite class="feedback-item__name">Николай Петров</cite>
+        <p class="feedback-item__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+      </blockquote>
+      <blockquote class="feedback-item">
+        <cite class="feedback-item__name">Николай Петров</cite>
+        <p class="feedback-item__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+      </blockquote>
+      <blockquote class="feedback-item">
+        <cite class="feedback-item__name">Николай Петров</cite>
+        <p class="feedback-item__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+      </blockquote>
+      <!-- <label class="slider__toggle" for="feedback-input-1">1</label>
+      <label class="slider__toggle" for="feedback-input-2">2</label>
+      <label class="slider__toggle" for="feedback-input-3">3</label> -->
+    </article>
+    <section class="tariff">
+      <!-- <input class="slider__input" type="radio" name="tariff" id="tariff-input-1">
+      <input class="slider__input" type="radio" name="tariff" id="tariff-input-2" checked>
+      <input class="slider__input" type="radio" name="tariff" id="tariff-input-3"> -->
+      <table class="tariff-table">
+        <tr class="tariff-table__header">
+          <td>База <span class="tariff-table__header--price">1,99 USD</span></td>
+          <td>Стандарт <span class="tariff-table__header--price">3,99 USD</span></td>
+          <td>Анлим <span class="tariff-table__header--price">9,99 USD</span></td>
+        </tr>
+        <tr class="tariff-table__row">
+          <td>Розовый фильтр <span class="tariff-table__yes">Yes</span></td>
+          <td>Розовый фильтр <span class="tariff-table__yes">Yes</span></td>
+          <td>Розовый фильтр <span class="tariff-table__yes">Yes</span></td>
+        </tr>
+        <tr class="tariff-table__row">
+          <td>Смайлики <span class="tariff-table__no">No</span></td>
+          <td>Смайлики <span class="tariff-table__yes">Yes</span></td>
+          <td>Смайлики <span class="tariff-table__yes">Yes</span></td>
+        </tr>
+        <tr class="tariff-table__row">
+          <td>Комментарии <span class="tariff-table__no">No</span></td>
+          <td>Комментарии <span class="tariff-table__no">No</span></td>
+          <td>Комментарии <span class="tariff-table__yes">Yes</span></td>
+        </tr>
+      </table>
+      <!-- <label class="tariff__toggle" for="tariff-input-1">1</label>
+      <label class="tariff__toggle" for="tariff-input-2">2</label>
+      <label class="tariff__toggle" for="tariff-input-3">3</label> -->
+    </section>
+    <section class="contacts">
+      <b class="contacts__intro">Остались вопросы? Свяжитесь с нами</b>
+      <div class="contacts__item">
+        <<p class="contacts__comm">Звоните:</p>
+          <p class="contacts__text">+7 (812) 555-66-666</p>
+      </div>
+      <div class="contacts__item">
+        <p class="contacts__comm">Пишите:</p>
+        <p class="contacts__text">mail@htmlacademy.ru</p>
+      </div>
+      <div class="contacts__item">
+        <p class="contacts__comm">Приезжайте в гости:</p>
+        <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+      </div>
+      <a href="map.html">Карта <img src="http://placehold.it/320x200" width="320" height="200" alt="Карта"></a>
+    </section>
+  </main>
+</body>
+
 </html>
