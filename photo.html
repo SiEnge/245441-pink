@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="page">
@@ -16,7 +18,7 @@
       <ul class="main-menu__list">
         <li class="main-menu__item"><a href="index.html">Главная</a></li>
         <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-menu__item"><a href="contest.html">Конкурс</a></li>
+        <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
         <li class="main-menu__item"><a href="academy.html">HTML Academy</a></li>
       </ul>
     </nav>
@@ -27,7 +29,7 @@
   <main class="main-page">
     <p class="main-page__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     <article class="photo-block">
-      <a class="photo-block__img photo-block__img--stretch"><img src="http://placehold.it/320x137" width="320" height="137" alt=""></a>
+      <a class="photo-block__img photo-block__img--stretch"><img src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt=""></a>
       <blockquote class="photo-block__signature">
         <div class="photo-block__title">
           <cite class="photo-block__name">Анна</cite>
@@ -38,7 +40,7 @@
       <p class="photo-block__like">Нравится: 215</p>
     </article>
     <article class="photo-block">
-      <a class="photo-block__img"><img src="http://placehold.it/280x180" width="280" height="180" alt=""></a>
+      <a class="photo-block__img"><img src="/img/photo-1-mobile@1x.jpg" width="280" height="180" alt=""></a>
       <blockquote class="photo-block__signature">
         <div class="photo-block__title">
           <cite class="photo-block__name">Левон</cite>
@@ -49,7 +51,7 @@
       <p class="photo-block__like">Нравится: 356</p>
     </article>
     <article class="photo-block">
-      <a class="photo-block__img"><img src="http://placehold.it/280x180" width="280" height="180" alt=""></a>
+      <a class="photo-block__img"><img src="/img/photo-2-mobile@1x.jpg" width="280" height="180" alt=""></a>
       <blockquote class="photo-block__signature">
         <div class="photo-block__title">
           <cite class="photo-block__name">Антон</cite>
@@ -60,7 +62,7 @@
       <p class="photo-block__like">Нравится: 666</p>
     </article>
     <article class="photo-block">
-      <a class="photo-block__img"><img src="http://placehold.it/280x180" width="280" height="180" alt=""></a>
+      <a class="photo-block__img"><img src="/img/photo-3-mobile@1x.jpg" width="280" height="180" alt=""></a>
       <blockquote class="photo-block__signature">
         <div class="photo-block__title">
           <cite class="photo-block__name">Борис</cite>
@@ -71,7 +73,7 @@
       <p class="photo-block__like">Нравится: 215</p>
     </article>
     <article class="photo-block">
-      <a class="photo-block__img"><img src="http://placehold.it/280x180" width="280" height="180" alt=""></a>
+      <a class="photo-block__img"><img src="/img/photo-4-mobile@1x.jpg" width="280" height="180" alt=""></a>
       <blockquote class="photo-block__signature">
         <div class="photo-block__title">
           <cite class="photo-block__name">Сергей</cite>
@@ -82,7 +84,7 @@
       <p class="photo-block__like">Нравится: 4</p>
     </article>
     <article class="photo-block">
-      <a class="photo-block__img"><img src="http://placehold.it/280x180" width="280" height="180" alt=""></a>
+      <a class="photo-block__img"><img src="/img/photo-5-mobile@1x.jpg" width="280" height="180" alt=""></a>
       <blockquote class="photo-block__signature">
         <div class="photo-block__title">
           <cite class="photo-block__name">Максим</cite>
@@ -93,7 +95,7 @@
       <p class="photo-block__like">Нравится: 150</p>
     </article>
     <article class="photo-block">
-      <a class="photo-block__img"><img src="http://placehold.it/280x180" width="280" height="180" alt=""></a>
+      <a class="photo-block__img"><img src="/img/photo-6-mobile@1x.jpg" width="280" height="180" alt=""></a>
       <blockquote class="photo-block__signature">
         <div class="photo-block__title">
           <cite class="photo-block__name">Надежда</cite>
@@ -105,12 +107,12 @@
     </article>
     <section class="photo-upload">
       <p class="photo-upload__intro">Затмите их всех! Выкладывыйте все, что накопилось в телефоне!</p>
-      <div class="photo-upload__img"><img src="http://placehold.it/280x374" width="280" height="374" alt=""></div>
-      <p class="photo-upload-edit">
-        <span class="photo-upload-edit--crop">Кадрирование</span>
-        <span class="photo-upload-edit--fill">Заливка</span>
-        <span class="photo-upload-edit--contrast">Контраст</span>
-        <span class="photo-upload-edit__bar"></span>
+      <div class="photo-upload__img"><img src="/img/photo-7-mobile@1x.jpg" width="280" height="374" alt=""></div>
+      <p class="photo-upload__edit">
+        <span class="photo-upload__edit--crop">Кадрирование</span>
+        <span class="photo-upload__edit--fill">Заливка</span>
+        <span class="photo-upload__edit--contrast">Контраст</span>
+        <span class="photo-upload__edit-bar"></span>
       </p>
       <button class="photo-upload__btn" type="submit">Запостить</button>
       <button class="photo-upload__btn photo-upload__btn--cancel" type="submit">Отмена</button>

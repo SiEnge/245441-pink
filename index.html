@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="page">
@@ -16,7 +18,7 @@
       <ul class="main-menu__list">
         <li class="main-menu__item"><a href="index.html">Главная</a></li>
         <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-menu__item"><a href="contest.html">Конкурс</a></li>
+        <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
         <li class="main-menu__item"><a href="academy.html">HTML Academy</a></li>
       </ul>
     </nav>
@@ -36,7 +38,7 @@
         <h3 class="information__title">Устали от серости мегаполиса?</h3>
         <h3 class="information__title">Нам есть, что вам предложить!</h3>
       </div>
-      <ul class="information-list">
+      <ul class="information__list">
         <li class="information__item">
           <h3 class="information__name">Поднимает настроение</h3>
           <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
@@ -50,24 +52,24 @@
           <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
-      <img class="information__img" src="http://placehold.it/162x330" alt="Пример работы приложения" width="162" height="330">
+      <img class="information__img" src="/img/iphone-screen-mobile@1x.png" alt="Пример работы приложения" width="162" height="330">
     </section>
     <article class="feedback">
       <!-- Удалю, когда буду делать на JS :) а пока так
       <input class="slider__input" type="radio" name="feedback" id="feedback-input-1" checked>
       <input class="slider__input" type="radio" name="feedback" id="feedback-input-2">
       <input class="slider__input" type="radio" name="feedback" id="feedback-input-3"> -->
-      <blockquote class="feedback-item">
-        <cite class="feedback-item__name">Николай Петров</cite>
-        <p class="feedback-item__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+      <blockquote class="feedback__item">
+        <cite class="feedback__name">Николай Петров</cite>
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
-      <blockquote class="feedback-item">
-        <cite class="feedback-item__name">Николай Петров</cite>
-        <p class="feedback-item__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+      <blockquote class="feedback__item">
+        <cite class="feedback__name">Николай Петров</cite>
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
-      <blockquote class="feedback-item">
-        <cite class="feedback-item__name">Николай Петров</cite>
-        <p class="feedback-item__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+      <blockquote class="feedback__item">
+        <cite class="feedback__name">Николай Петров</cite>
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
       <!-- <label class="slider__toggle" for="feedback-input-1">1</label>
       <label class="slider__toggle" for="feedback-input-2">2</label>
@@ -77,26 +79,26 @@
       <!-- <input class="slider__input" type="radio" name="tariff" id="tariff-input-1">
       <input class="slider__input" type="radio" name="tariff" id="tariff-input-2" checked>
       <input class="slider__input" type="radio" name="tariff" id="tariff-input-3"> -->
-      <table class="tariff-table">
-        <tr class="tariff-table__header">
-          <td>База <span class="tariff-table__header--price">1,99 USD</span></td>
-          <td>Стандарт <span class="tariff-table__header--price">3,99 USD</span></td>
-          <td>Анлим <span class="tariff-table__header--price">9,99 USD</span></td>
+      <table class="tariff__table">
+        <tr class="tariff__table-header">
+          <td>База <span class="tariff__table-header--price">1,99 USD</span></td>
+          <td>Стандарт <span class="tariff__table-header--price">3,99 USD</span></td>
+          <td>Анлим <span class="tariff__table-header--price">9,99 USD</span></td>
         </tr>
-        <tr class="tariff-table__row">
-          <td>Розовый фильтр <span class="tariff-table__yes">Yes</span></td>
-          <td>Розовый фильтр <span class="tariff-table__yes">Yes</span></td>
-          <td>Розовый фильтр <span class="tariff-table__yes">Yes</span></td>
+        <tr class="tariff__table-row">
+          <td>Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
+          <td>Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
+          <td>Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
         </tr>
-        <tr class="tariff-table__row">
-          <td>Смайлики <span class="tariff-table__no">No</span></td>
-          <td>Смайлики <span class="tariff-table__yes">Yes</span></td>
-          <td>Смайлики <span class="tariff-table__yes">Yes</span></td>
+        <tr class="tariff__table-row">
+          <td>Смайлики <span class="tariff__table-no">No</span></td>
+          <td>Смайлики <span class="tariff__table-yes">Yes</span></td>
+          <td>Смайлики <span class="tariff__table-yes">Yes</span></td>
         </tr>
-        <tr class="tariff-table__row">
-          <td>Комментарии <span class="tariff-table__no">No</span></td>
-          <td>Комментарии <span class="tariff-table__no">No</span></td>
-          <td>Комментарии <span class="tariff-table__yes">Yes</span></td>
+        <tr class="tariff__table-row">
+          <td>Комментарии <span class="tariff__table-no">No</span></td>
+          <td>Комментарии <span class="tariff__table-no">No</span></td>
+          <td>Комментарии <span class="tariff__table-yes">Yes</span></td>
         </tr>
       </table>
       <!-- <label class="tariff__toggle" for="tariff-input-1">1</label>
@@ -106,7 +108,7 @@
     <section class="contacts">
       <b class="contacts__intro">Остались вопросы? Свяжитесь с нами</b>
       <div class="contacts__item">
-        <<p class="contacts__comm">Звоните:</p>
+          <p class="contacts__comm">Звоните:</p>
           <p class="contacts__text">+7 (812) 555-66-666</p>
       </div>
       <div class="contacts__item">
