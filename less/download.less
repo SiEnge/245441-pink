@@ -2,9 +2,12 @@
   background-color: @color-dark-blue;
   color: @color-white;
   padding: 30px 20px 20px 20px;
+
 }
 
 .download__btn {
+  width: 280px;
+  margin: 0 auto;
   display: block;
   padding: 13px 35px;
   .font-bold-18;
@@ -15,6 +18,23 @@
   border-radius: 70px ;
 }
 
-.download__text {
+.download__link {
+  .container;
   text-align: center;
+}
+
+.download__text {
+  .container;
+  text-align: center;
+}
+
+
+@media @tablet-widths {
+  .download {
+    background: none;
+  }
+
+  .download__btn {
+    width: 300px;
+  }
 }

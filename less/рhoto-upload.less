@@ -1,11 +1,36 @@
 .photo-upload {
-  width: 280px;
-  margin: 0 auto;
+  background-color: @color-fon-grey;
 }
-
 
 .photo-upload__intro {
   margin: 0;
   padding: 50px 20px 55px 20px;
   text-align: center;
+  background-color: @color-white;
+}
+
+.photo-upload__img {
+  background-color: @color-fon-grey;
+  margin: 20px;
+}
+
+.photo-upload__edit {
+
+}
+
+.photo-upload__btn {
+  display: block;
+  margin: 20px;
+  padding: 13px 35px;
+  .font-bold-18;
+  text-align: center;
+  color: @color-pink;
+  background-color: @color-fon-grey;
+  text-decoration: none;
+  border: 3px solid @color-pink;
+  border-radius: 70px;
+  &--cancel {
+    color: @color-dark-grey;
+    border-color: @color-dark-grey;
+  }
 }
