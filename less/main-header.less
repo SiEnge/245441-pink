@@ -19,7 +19,7 @@
     left: 20px;
     width: 75px;
     height: 22px;
-    background-image: url("/img/logo-pink-white-mobile.svg");
+    background-image: url("../img/logo-pink-white-mobile.svg");
     background-repeat: no-repeat;
     background-position: left top;
   }
@@ -28,33 +28,45 @@
 .main-header__img {
   padding-top: 109px;
   text-align: center;
-  background: @color-dark-blue url("/img/bg-back-mobile@1x.jpg") no-repeat  top center;
+  background: @color-dark-blue url("../img/bg-back-mobile@1x.jpg") no-repeat  top center;
   img {
     width: 258px;
     height: 286px;
   }
+
 }
 
 .main-header__menu-trigger {
   display: none;
 }
 
-.main-header__content {
-  text-align: center;
-}
+// .main-header__content {
+//   text-align: center;
+// }
 
 .main-header__title {
   padding: 20px;
   color: @color-white;
   .font-light-24;
 }
-
-@media @tablet-widths {
-
-
-}
-
-@media @desktop-widths {
-
-
-}
+// {Закомментировано до лучших времен адаптивности}
+// @media @tablet-widths {
+//   .main-header {
+//     display: flex;
+//     // flex-direction: row-reverse;
+//     flex-wrap: wrap;
+//
+//   }
+//   .main-header__top {
+//     flex-basis: 320px;
+//     flex-grow: 1;
+//     order: -2;
+//   }
+//
+//
+// }
+//
+// @media @desktop-widths {
+//
+//
+// }
