@@ -10,32 +10,35 @@
 
 <body class="page">
   <header class="main-header">
-    <div class="main-header__top">
-      <a class="main-header__logo" href="index.html">Пинк</a>
-      <button class="main-header__menu-trigger"></button>
-    </div>
-    <nav class="main-menu main-menu--hidden">
+    <nav class="main-menu main-menu--nojs main-menu--closed">
+      <div class="main-menu__top ">
+        <a class="main-menu__logo" href="index.html">Пинк</a>
+        <button class="main-menu__burger" type="button">Открыть меню</button>
+      </div>
       <ul class="main-menu__list">
-        <li class="main-menu__item"><a href="index.html">Главная</a></li>
+        <li class="main-menu__item main-menu__item--active"><a href="index.html">Главная</a></li>
         <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
         <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
         <li class="main-menu__item"><a href="academy.html">HTML Academy</a></li>
       </ul>
     </nav>
-    <div class="main-header__img">
-      <img src="img/iphone-hand-mobile@1x.png" width="258" height="286">
+    <div class="main-header__bottom container">
+        <img src="img/iphone-hand-mobile@1x.png" width="258" height="286">
+        <article class="download">
+          <div class="download__wrap">
+            <h1 class="download__title">Взгляните на жизнь иначе!</h1>
+            <a class="download__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
+            <div class="download__link">
+              <a class="download__link--apple" href="http://www.apple.com/ru/itunes/">Apple</a>
+              <a class="download__link--android" href="https://play.google.com/store">Android</a>
+              <a class="download__link--windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone">Windows</a>
+            </div>
+            <p class="download__text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </article>
     </div>
-    <article class="download">
-      <a class="download__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
-      <div class="download__link container">
-        <a class="download__link--apple" href="http://www.apple.com/ru/itunes/">Apple</a>
-        <a class="download__link--android" href="https://play.google.com/store">Android</a>
-        <a class="download__link--windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone">Windows</a>
-      </div>
-      <p class="download__text container">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </p>
-    </article>
   </header>
   <main class="main-page">
     <section class="information">
@@ -115,8 +118,8 @@
     <section class="contacts container">
       <b class="contacts__intro">Остались вопросы? Свяжитесь с нами</b>
       <div class="contacts__item">
-          <p class="contacts__comm">Звоните:</p>
-          <p class="contacts__text">+7 (812) 555-66-666</p>
+        <p class="contacts__comm">Звоните:</p>
+        <p class="contacts__text">+7 (812) 555-66-666</p>
       </div>
       <div class="contacts__item">
         <p class="contacts__comm">Пишите:</p>
@@ -129,6 +132,23 @@
       <a href="map.html">Карта <img src="http://placehold.it/320x200" width="320" height="200" alt="Карта"></a>
     </section>
   </main>
+
+  <script>
+    var navMenu = document.querySelector(".main-menu");
+    var navToggle = document.querySelector(".main-menu__burger");
+
+    navMenu.classList.remove("main-menu--nojs");
+
+    navToggle.addEventListener("click", function() {
+      if (navMenu.classList.contains("main-menu--closed")) {
+        navMenu.classList.remove("main-menu--closed");
+        navMenu.classList.add("main-menu--opened");
+      } else {
+        navMenu.classList.add("main-menu--closed");
+        navMenu.classList.remove("main-menu--opened");
+      }
+    });
+  </script>
 </body>
 
 </html>

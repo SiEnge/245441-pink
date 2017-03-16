@@ -1,38 +1,95 @@
 .download {
   background-color: @color-dark-blue;
   color: @color-white;
-  padding: 30px 20px 20px 20px;
+  padding-top: 30px;
+  padding-bottom: 33px;
+}
+
+.download__wrap {
+  max-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .download__btn {
-  width: 280px;
-  margin: 0 auto;
+  margin-bottom: 30px;
   display: block;
-  padding: 13px 35px;
+  padding: 13px 0;
   .font-bold-18;
   text-align: center;
   color: @color-white;
   text-decoration: none;
   border: 3px solid @color-white;
-  border-radius: 70px ;
+  border-radius: 70px;
+  &:hover {
+    background-color: @color-white;
+    color: @color-pink;
+  }
+  &:active {
+    color: @color-pink-30;
+  }
 }
 
 .download__link {
+  height: 60px; //временно
+  outline: 3px solid rgba(155, 145, 82, 0.9); //временно
+  outline-offset: -3px; //временно
+
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .download__text {
   text-align: center;
+  margin: 0;
 }
+
+.download__title {
+  display: none;
+}
+
 
 // {Закомментировано до лучших времен адаптивности}
 // @media @tablet-widths {
 //   .download {
-//     order: -1;
-//     margin-top: auto;
+//     background-color: transparent;
+//   }
+//
+//   .download__wrap {
+//     margin: 0;
+//     max-width: 300px;
+//   }
+//
+//   .download__title {
+//     display: block;
+//     .font-light-24;
+//     font-size: 40px;
+//     line-height: 48px;
+//     padding: 50px 30px;
+//     margin: 0;
 //   }
 //
 //   .download__btn {
-//     width: 300px;
+//     margin-bottom: 45px;
+//   }
+//
+//   .download__link {
+//     margin-bottom: 24px;
+//   }
+//
+//   .download__text {
+//     font-size: 18px;
+//   }
+// }
+//
+//
+// @media @desktop-widths {
+//   .download__title {
+//     font-size: 50px;
+//     line-height: 60px;
+//   }
+//
+//   .download__btn {
+//     font-size: 21px;
 //   }
 // }
