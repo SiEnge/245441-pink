@@ -8,12 +8,52 @@
   .font-light-24;
 }
 
+.contacts__item {
+  margin: 24px 0;
+}
+
 .contacts__comm {
   color: @color-blue;
   .font-bold-18;
+  margin: 0;
 }
 
 .contacts__text {
   color: @color-pink;
   .font-light-24;
+  margin: 0;
+}
+
+
+@media @tablet-widths {
+  .contacts__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    min-width: 300px;
+  }
+
+  .contacts__intro {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+
+@media @desktop-widths {
+  .contacts__wrap {
+    flex-wrap: nowrap;
+  }
+
+  .contacts__intro {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contacts__item {
+    min-width: 300px;
+  }
 }

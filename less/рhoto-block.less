@@ -3,9 +3,11 @@
   // padding: 0;
 }
 
-.photo-block__img--stretch {
+.photo-block__img--panorama {
+
   padding: 0;
-  margin-left: -20px;
+  //margin-left: -20px;
+  width: 100%;
 
 }
 
@@ -26,4 +28,19 @@
 .photo-block__like {
   color: @color-pink;
   margin: 20px;
+}
+
+@media @tablet-widths {
+  .photo-block__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  .photo-block {
+    max-width: 300px;
+    margin: 20px;
+  }
+
+
+  
 }

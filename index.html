@@ -23,21 +23,21 @@
       </ul>
     </nav>
     <div class="main-header__bottom container">
-        <img src="img/iphone-hand-mobile@1x.png" width="258" height="286">
-        <article class="download">
-          <div class="download__wrap">
-            <h1 class="download__title">Взгляните на жизнь иначе!</h1>
-            <a class="download__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
-            <div class="download__link">
-              <a class="download__link--apple" href="http://www.apple.com/ru/itunes/">Apple</a>
-              <a class="download__link--android" href="https://play.google.com/store">Android</a>
-              <a class="download__link--windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone">Windows</a>
-            </div>
-            <p class="download__text">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-            </p>
+      <img src="img/iphone-hand-mobile@1x.png" width="258" height="286">
+      <article class="download">
+        <div class="download__wrap">
+          <h1 class="download__title">Взгляните на жизнь иначе!</h1>
+          <a class="download__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
+          <div class="download__link">
+            <a class="download__link--apple" href="http://www.apple.com/ru/itunes/">Apple</a>
+            <a class="download__link--android" href="https://play.google.com/store">Android</a>
+            <a class="download__link--windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone">Windows</a>
           </div>
-        </article>
+          <p class="download__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </article>
     </div>
   </header>
   <main class="main-page">
@@ -48,21 +48,37 @@
           <h3 class="information__title">Нам есть, что вам<br>предложить!</h3>
         </div>
       </div>
-      <ul class="information__list container">
-        <li class="information__item">
-          <h3 class="information__name">Поднимает настроение</h3>
-          <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
-        </li>
-        <li class="information__item">
-          <h3 class="information__name">Меняет мир вокруг</h3>
-          <p class="information__text">Сделайте снимой и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="information__item">
-          <h3 class="information__name">Заводит новых друзей</h3>
-          <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <img class="information__img" src="img/iphone-screen-mobile@1x.png" alt="Пример работы приложения" width="162" height="330">
+      <div class="information__block container">
+        <ul class="information__list">
+          <li class="information__item">
+            <h3 class="information__name">Поднимает настроение</h3>
+            <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+          </li>
+          <li class="information__item">
+            <h3 class="information__name">Меняет мир вокруг</h3>
+            <p class="information__text">Сделайте снимой и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="information__item">
+            <h3 class="information__name">Заводит новых друзей</h3>
+            <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="information__block-img">
+          <img class="information__img" src="img/iphone-screen-mobile@1x.png" alt="Пример работы приложения" width="162" height="330">
+          <img class="information__img" src="img/iphone-screen-mobile@1x.png" alt="Пример работы приложения" width="162" height="330">
+          <img class="information__img" src="img/iphone-screen-mobile@1x.png" alt="Пример работы приложения" width="162" height="330">
+        </div>
+      </div>
+    </section>
+    <section class="effect">
+      <div class="effect__wrap container">
+        <img class="effect__img" src="http://placehold.it/238x276" width="238" height="276">
+        <div class="effect__block-text">
+          <h3 class="effect__title">Эффект на 24 часа!</h3>
+          <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
     </section>
     <article class="feedback container">
       <!-- Удалю, когда буду делать на JS :) а пока так
@@ -70,14 +86,17 @@
       <input class="slider__input" type="radio" name="feedback" id="feedback-input-2">
       <input class="slider__input" type="radio" name="feedback" id="feedback-input-3"> -->
       <blockquote class="feedback__item">
+        <span class="feedback__bio">25 лет, водитель трамвая</span>
         <cite class="feedback__name">Николай Петров</cite>
         <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
       <blockquote class="feedback__item">
+        <span class="feedback__bio">25 лет, водитель трамвая</span>
         <cite class="feedback__name">Николай Петров</cite>
         <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
       <blockquote class="feedback__item">
+        <span class="feedback__bio">25 лет, водитель трамвая</span>
         <cite class="feedback__name">Николай Петров</cite>
         <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
@@ -91,24 +110,28 @@
       <input class="slider__input" type="radio" name="tariff" id="tariff-input-3"> -->
       <table class="tariff__table container">
         <tr class="tariff__table-header">
-          <td>База <span class="tariff__table-header--price">1,99 USD</span></td>
-          <td>Стандарт <span class="tariff__table-header--price">3,99 USD</span></td>
-          <td>Анлим <span class="tariff__table-header--price">9,99 USD</span></td>
+          <td class="tariff__table-col1"></td>
+          <td class="tariff__table-col2">База<br><span class="tariff__table-header--price">1,99 USD</span></td>
+          <td class="tariff__table-col3">Стандарт<br><span class="tariff__table-header--price">3,99 USD</span></td>
+          <td class="tariff__table-col4">Анлим<br><span class="tariff__table-header--price">9,99 USD</span></td>
         </tr>
         <tr class="tariff__table-row">
-          <td>Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
-          <td>Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
-          <td>Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
+          <td class="tariff__table-col1">Розовый фильтр</td>
+          <td class="tariff__table-col2">Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
+          <td class="tariff__table-col3">Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
+          <td class="tariff__table-col4">Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
         </tr>
         <tr class="tariff__table-row">
-          <td>Смайлики <span class="tariff__table-no">No</span></td>
-          <td>Смайлики <span class="tariff__table-yes">Yes</span></td>
-          <td>Смайлики <span class="tariff__table-yes">Yes</span></td>
+          <td class="tariff__table-col1">Смайлики</td>
+          <td class="tariff__table-col2">Смайлики <span class="tariff__table-no">No</span></td>
+          <td class="tariff__table-col3">Смайлики <span class="tariff__table-yes">Yes</span></td>
+          <td class="tariff__table-col4">Смайлики <span class="tariff__table-yes">Yes</span></td>
         </tr>
         <tr class="tariff__table-row">
-          <td>Комментарии <span class="tariff__table-no">No</span></td>
-          <td>Комментарии <span class="tariff__table-no">No</span></td>
-          <td>Комментарии <span class="tariff__table-yes">Yes</span></td>
+          <td class="tariff__table-col1">Комментарии</td>
+          <td class="tariff__table-col2">Комментарии <span class="tariff__table-no">No</span></td>
+          <td class="tariff__table-col3">Комментарии <span class="tariff__table-no">No</span></td>
+          <td class="tariff__table-col4">Комментарии <span class="tariff__table-yes">Yes</span></td>
         </tr>
       </table>
       <!-- <label class="tariff__toggle" for="tariff-input-1">1</label>
@@ -116,18 +139,20 @@
       <label class="tariff__toggle" for="tariff-input-3">3</label> -->
     </section>
     <section class="contacts container">
-      <b class="contacts__intro">Остались вопросы? Свяжитесь с нами</b>
-      <div class="contacts__item">
-        <p class="contacts__comm">Звоните:</p>
-        <p class="contacts__text">+7 (812) 555-66-666</p>
-      </div>
-      <div class="contacts__item">
-        <p class="contacts__comm">Пишите:</p>
-        <p class="contacts__text">mail@htmlacademy.ru</p>
-      </div>
-      <div class="contacts__item">
-        <p class="contacts__comm">Приезжайте в гости:</p>
-        <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+      <b class="contacts__intro">Остались вопросы?<br>Свяжитесь с нами</b>
+      <div class="contacts__wrap">
+        <div class="contacts__item">
+          <p class="contacts__comm">Звоните:</p>
+          <p class="contacts__text">+7 (812) 555-66-666</p>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__comm">Пишите:</p>
+          <p class="contacts__text">mail@htmlacademy.ru</p>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__comm">Приезжайте в гости:</p>
+          <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+        </div>
       </div>
       <a href="map.html">Карта <img src="http://placehold.it/320x200" width="320" height="200" alt="Карта"></a>
     </section>
