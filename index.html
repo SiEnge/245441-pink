@@ -4,39 +4,51 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="page">
   <header class="main-header">
-    <div class="main-header__top">
-      <a class="main-header__logo" href="index.html">Пинк</a>
-      <button class="main-header__menu-trigger"></button>
-    </div>
-    <nav class="main-menu main-menu--hidden">
+    <nav class="main-menu main-menu--nojs main-menu--closed">
+      <div class="main-menu__top ">
+        <a class="main-menu__logo" href="index.html">Пинк</a>
+        <button class="main-menu__burger" type="button">Открыть меню</button>
+      </div>
       <ul class="main-menu__list">
-        <li class="main-menu__item"><a href="index.html">Главная</a></li>
+        <li class="main-menu__item main-menu__item--active"><a href="index.html">Главная</a></li>
         <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-menu__item"><a href="contest.html">Конкурс</a></li>
+        <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
         <li class="main-menu__item"><a href="academy.html">HTML Academy</a></li>
       </ul>
     </nav>
+    <div class="main-header__bottom container">
+        <img src="img/iphone-hand-mobile@1x.png" width="258" height="286">
+        <article class="download">
+          <div class="download__wrap">
+            <h1 class="download__title">Взгляните на жизнь иначе!</h1>
+            <a class="download__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
+            <div class="download__link">
+              <a class="download__link--apple" href="http://www.apple.com/ru/itunes/">Apple</a>
+              <a class="download__link--android" href="https://play.google.com/store">Android</a>
+              <a class="download__link--windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone">Windows</a>
+            </div>
+            <p class="download__text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </article>
+    </div>
   </header>
   <main class="main-page">
-    <article class="download">
-      <a class="download__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
-      <a class="download__link download__link--apple" href="http://www.apple.com/ru/itunes/">Apple</a>
-      <a class="download__link download__link--android" href="https://play.google.com/store">Android</a>
-      <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone">Windows</a>
-      <p class="download__text">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </p>
-    </article>
     <section class="information">
       <div class="information__intro">
-        <h3 class="information__title">Устали от серости мегаполиса?</h3>
-        <h3 class="information__title">Нам есть, что вам предложить!</h3>
+        <div class="container">
+          <h3 class="information__title">Устали от серости мегаполиса?</h3>
+          <h3 class="information__title">Нам есть, что вам<br>предложить!</h3>
+        </div>
       </div>
-      <ul class="information-list">
+      <ul class="information__list container">
         <li class="information__item">
           <h3 class="information__name">Поднимает настроение</h3>
           <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
@@ -50,24 +62,24 @@
           <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
-      <img class="information__img" src="http://placehold.it/162x330" alt="Пример работы приложения" width="162" height="330">
+      <img class="information__img" src="img/iphone-screen-mobile@1x.png" alt="Пример работы приложения" width="162" height="330">
     </section>
-    <article class="feedback">
+    <article class="feedback container">
       <!-- Удалю, когда буду делать на JS :) а пока так
       <input class="slider__input" type="radio" name="feedback" id="feedback-input-1" checked>
       <input class="slider__input" type="radio" name="feedback" id="feedback-input-2">
       <input class="slider__input" type="radio" name="feedback" id="feedback-input-3"> -->
-      <blockquote class="feedback-item">
-        <cite class="feedback-item__name">Николай Петров</cite>
-        <p class="feedback-item__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+      <blockquote class="feedback__item">
+        <cite class="feedback__name">Николай Петров</cite>
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
-      <blockquote class="feedback-item">
-        <cite class="feedback-item__name">Николай Петров</cite>
-        <p class="feedback-item__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+      <blockquote class="feedback__item">
+        <cite class="feedback__name">Николай Петров</cite>
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
-      <blockquote class="feedback-item">
-        <cite class="feedback-item__name">Николай Петров</cite>
-        <p class="feedback-item__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+      <blockquote class="feedback__item">
+        <cite class="feedback__name">Николай Петров</cite>
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
       <!-- <label class="slider__toggle" for="feedback-input-1">1</label>
       <label class="slider__toggle" for="feedback-input-2">2</label>
@@ -77,37 +89,37 @@
       <!-- <input class="slider__input" type="radio" name="tariff" id="tariff-input-1">
       <input class="slider__input" type="radio" name="tariff" id="tariff-input-2" checked>
       <input class="slider__input" type="radio" name="tariff" id="tariff-input-3"> -->
-      <table class="tariff-table">
-        <tr class="tariff-table__header">
-          <td>База <span class="tariff-table__header--price">1,99 USD</span></td>
-          <td>Стандарт <span class="tariff-table__header--price">3,99 USD</span></td>
-          <td>Анлим <span class="tariff-table__header--price">9,99 USD</span></td>
+      <table class="tariff__table container">
+        <tr class="tariff__table-header">
+          <td>База <span class="tariff__table-header--price">1,99 USD</span></td>
+          <td>Стандарт <span class="tariff__table-header--price">3,99 USD</span></td>
+          <td>Анлим <span class="tariff__table-header--price">9,99 USD</span></td>
         </tr>
-        <tr class="tariff-table__row">
-          <td>Розовый фильтр <span class="tariff-table__yes">Yes</span></td>
-          <td>Розовый фильтр <span class="tariff-table__yes">Yes</span></td>
-          <td>Розовый фильтр <span class="tariff-table__yes">Yes</span></td>
+        <tr class="tariff__table-row">
+          <td>Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
+          <td>Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
+          <td>Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
         </tr>
-        <tr class="tariff-table__row">
-          <td>Смайлики <span class="tariff-table__no">No</span></td>
-          <td>Смайлики <span class="tariff-table__yes">Yes</span></td>
-          <td>Смайлики <span class="tariff-table__yes">Yes</span></td>
+        <tr class="tariff__table-row">
+          <td>Смайлики <span class="tariff__table-no">No</span></td>
+          <td>Смайлики <span class="tariff__table-yes">Yes</span></td>
+          <td>Смайлики <span class="tariff__table-yes">Yes</span></td>
         </tr>
-        <tr class="tariff-table__row">
-          <td>Комментарии <span class="tariff-table__no">No</span></td>
-          <td>Комментарии <span class="tariff-table__no">No</span></td>
-          <td>Комментарии <span class="tariff-table__yes">Yes</span></td>
+        <tr class="tariff__table-row">
+          <td>Комментарии <span class="tariff__table-no">No</span></td>
+          <td>Комментарии <span class="tariff__table-no">No</span></td>
+          <td>Комментарии <span class="tariff__table-yes">Yes</span></td>
         </tr>
       </table>
       <!-- <label class="tariff__toggle" for="tariff-input-1">1</label>
       <label class="tariff__toggle" for="tariff-input-2">2</label>
       <label class="tariff__toggle" for="tariff-input-3">3</label> -->
     </section>
-    <section class="contacts">
+    <section class="contacts container">
       <b class="contacts__intro">Остались вопросы? Свяжитесь с нами</b>
       <div class="contacts__item">
-        <<p class="contacts__comm">Звоните:</p>
-          <p class="contacts__text">+7 (812) 555-66-666</p>
+        <p class="contacts__comm">Звоните:</p>
+        <p class="contacts__text">+7 (812) 555-66-666</p>
       </div>
       <div class="contacts__item">
         <p class="contacts__comm">Пишите:</p>
@@ -120,6 +132,23 @@
       <a href="map.html">Карта <img src="http://placehold.it/320x200" width="320" height="200" alt="Карта"></a>
     </section>
   </main>
+
+  <script>
+    var navMenu = document.querySelector(".main-menu");
+    var navToggle = document.querySelector(".main-menu__burger");
+
+    navMenu.classList.remove("main-menu--nojs");
+
+    navToggle.addEventListener("click", function() {
+      if (navMenu.classList.contains("main-menu--closed")) {
+        navMenu.classList.remove("main-menu--closed");
+        navMenu.classList.add("main-menu--opened");
+      } else {
+        navMenu.classList.add("main-menu--closed");
+        navMenu.classList.remove("main-menu--opened");
+      }
+    });
+  </script>
 </body>
 
 </html>

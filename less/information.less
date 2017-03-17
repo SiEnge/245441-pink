@@ -1,0 +1,48 @@
+.information {
+  background-color: @color-grey;
+}
+
+.information__intro {
+  background-color: @color-white;
+  text-align: center;
+  padding: 20px;
+}
+
+.information__title {
+  .font-light-24;
+}
+
+.information__list {
+  padding: 0;
+}
+
+.information__item {
+  .list-style-none;
+  text-align: center;
+  padding: 10px;
+}
+
+.information__name {
+  .font-bold-18;
+  color: @color-black;
+}
+
+
+@media @tablet-widths {
+  .information__title {
+    width: 620px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+
+}
+
+@media @desktop-widths {
+  .information__title {
+    width: 820px;
+    font-size: 50px;
+    line-height: 48px;
+  }
+
+}
