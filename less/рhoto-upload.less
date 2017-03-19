@@ -14,8 +14,9 @@
 }
 
 .photo-upload__btn {
-  display: block;
-  margin: 20px;
+  width: 280px;
+  //display: block;
+  margin-bottom: 20px;
   padding: 13px 35px;
   .font-bold-18;
   text-align: center;
@@ -27,5 +28,13 @@
   &--cancel {
     color: @color-dark-grey;
     border-color: @color-dark-grey;
+  }
+}
+
+@media @tablet-widths {
+  .photo-upload__wrap {
+    display: flex;
+
+
   }
 }

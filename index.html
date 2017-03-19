@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="css/style.css" rel="stylesheet">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <link rel="stylesheet/less" type="text/css" href="less/style.less">
+  <script src="less.js" type="text/javascript"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -157,6 +159,20 @@
       <a href="map.html">Карта <img src="http://placehold.it/320x200" width="320" height="200" alt="Карта"></a>
     </section>
   </main>
+  <footer class="main-footer main-footer--mobile-hidden container">
+    <p class="main-footer__logo">
+      <a class="main-footer-logo__img" href="#">Pink</a>
+    </p>
+    <p class="main-footer__social">
+      <a class="social-link social-link--tw" href="https://twitter.com/?lang=ru">Twitter</a>
+      <a class="social-link social-link--fb" href="https://www.facebook.com/">Facebook</a>
+      <a class="social-link social-link--yt" href="https://www.youtube.com/">YouTube</a>
+    </p>
+    <p class="main-footer__copyright">
+      Разработано
+      <a class="main-footer__copyright--link" href="https://htmlacademy.ru/">HTML Academy</a>
+    </p>
+  </footer>
 
   <script>
     var navMenu = document.querySelector(".main-menu");
