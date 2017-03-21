@@ -1,9 +1,36 @@
+.contest-form {
+  padding-top: 12px;
+}
+
 .contest-form__wrap {
   //box-sizing: border-box;
+  position: relative;
   border: none;
   &--bg-grey {
     background-color: @color-grey;
+    padding-top: 100px;
   }
+}
+
+
+.contest-form__legend {
+  position: absolute;
+  height: 1px;
+  width: 240px;
+  top: 20px;
+  padding-bottom: 10px;
+  color: @color-pink;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  &--hidden {
+    display: none;
+  }
+}
+
+.contest-form__item {
+  margin: 0;
+  margin-bottom: 17px;
 }
 
 
@@ -11,17 +38,17 @@
   display: block;
   color: @color-pink;
   text-transform: uppercase;
-  padding-left: 25px;
-  &--hidden {
-    display: none;
-  }
+  padding-left: 23px;
+  padding-bottom: 10px;
 }
 
 
+
 .contest-form__input {
-  //box-sizing: border-box;
+  width: 280px;
+  box-sizing: border-box;
   border: 2px solid @color-grey;
-  padding: 20px;
+  padding: 18px 20px;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
 
@@ -66,7 +93,7 @@
     }
     &--up {
       order: -1;
-    }    
+    }
     &--down {
       order: 1;
     }

@@ -11,9 +11,9 @@
 </head>
 
 <body class="page">
-  <header class="main-header">
-    <nav class="main-menu main-menu--nojs main-menu--closed">
-      <div class="main-menu__top ">
+  <header class="main-header main-header--small">
+    <nav class="main-menu main-menu--nojs main-menu--closed container">
+      <div class="main-menu__top">
         <a class="main-menu__logo" href="index.html">Пинк</a>
         <button class="main-menu__burger" type="button">Открыть меню</button>
       </div>
@@ -29,28 +29,28 @@
     </div>
   </header>
   <main class="main-page">
-    <p class="main-page__intro container">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    <p class="main-page__intro container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
     <form class="contest-form" action="https://echo.htmlacademy.ru/" method="post">
 
       <fieldset class="contest-form__wrap contest-form__wrap--hidden contest-form__wrap--up container">
-        <p>
+        <p class="contest-form__item">
           <label class="contest-form__label" for="surname">Фамилия:</label>
           <input class="contest-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
         </p>
-        <p>
+        <p class="contest-form__item">
           <label class="contest-form__label" for="name">Имя:</label>
           <input class="contest-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
         </p>
-        <p>
+        <p class="contest-form__item">
           <label class="contest-form__label" for="middle-name">Отчество:</label>
           <input class="contest-form__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
         </p>
       </fieldset>
 
       <fieldset class="contest-form__wrap contest-form__wrap--bg-grey contest-form__wrap--down">
-        <legend class="contest-form__label">Ваши безбашенные достижения в путешествии</legend>
-        
+        <legend class="contest-form__legend container">Ваши безбашенные достижения в путешествии</legend>
+
         <ul class="contest-form__list container">
           <li>
             <label>
@@ -80,7 +80,7 @@
             <label>
               <input type="checkbox" name="keep-tower">
               Удержал башню
-            </label>  
+            </label>
           </li>
           <li>
             <label>
@@ -91,9 +91,9 @@
         </ul>
       </fieldset>
 
-      
+
       <fieldset class="contest-form__wrap container">
-        <legend class="contest-form__label contest-form__label--hidden">
+        <legend class="contest-form__legend contest-form__legend--hidden">
           Контактная информация
         </legend>
         <p>
@@ -105,10 +105,10 @@
           <input class="contest-form__input" type="email" name="mail" id="mail" placeholder="Введите почту *" required>
         </p>
       </fieldset>
-      
+
 
       <fieldset class="contest-form__wrap contest-form__wrap--bg-grey contest-form__wrap--up container">
-        <legend class="contest-form__label">С каким приложением путешествовали?</legend>
+        <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
           <ul class="contest-form__list ">
             <li>
               <label>
@@ -120,24 +120,24 @@
               <label>
                 <input type="radio" name="app" value="android">
                 Pink для Android
-              </label> 
+              </label>
             </li>
             <li>
               <label>
                 <input type="radio" name="app" value="windows-phone">
                 Windows Phone
-              </label>  
+              </label>
             </li>
-          </ul>           
-      </fieldset>      
+          </ul>
+      </fieldset>
       <fieldset class="contest-form__wrap contest-form__wrap--down container">
-        <legend class="contest-form__label">
+        <legend class="contest-form__legend">
           Опишите свои эмоции
         </legend>
         <textarea class="contest-form__input" name="emotions" id="emotions" rows="6">
           Можно прям в красках, не стесняясь в выражениях
         </textarea>
-      </fieldset> 
+      </fieldset>
 
       <button class="contest-form__btn container contest-form__wrap--down" type="submit">Отправить форму</button>
       <p class="contest-form__comment contest-form__wrap--down"><span class="contest-form__comment--pink">*</span>-обязательные поля</p>

@@ -6,32 +6,58 @@
 .information__intro {
   background-color: @color-white;
   text-align: center;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 1px;
 }
 
 .information__title {
   .font-light-24;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.information__block {
+  padding-top: 83px;
 }
 
 .information__list {
-  padding: 0;
+  .list-style-none;
+  margin-bottom: 32px;
 }
 
 .information__item {
   .list-style-none;
   text-align: center;
-  padding: 10px;
+  margin-bottom: 23px;
 }
 
 .information__name {
+  margin: 0;
   .font-bold-18;
   color: @color-black;
+}
+
+.information__text {
+  margin: 0;
+  padding: 10px 0;
 }
 
 .information__img {
   margin: 0 auto;
   width: 162px;
   height: 330px;
+}
+
+.information__block-img {
+  position: relative;
+  height: 277px;
+  overflow: hidden;
+}
+
+.information__block-img .information__img:nth-child(1) {
+  position: absolute;
+  bottom: -53px;
+  left: 62px;
 }
 
 .information__block-img .information__img:nth-child(n+2) {
