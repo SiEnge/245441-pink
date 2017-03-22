@@ -66,24 +66,38 @@
 
 
 @media @tablet-widths {
+  .information__intro {
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+
   .information__title {
     width: 620px;
     font-size: 40px;
     line-height: 48px;
+    margin-bottom: 0;
   }
 
   .information__block {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 75px;
   }
 
   .information__list {
     max-width: 310px;
+    margin-bottom: 8px;
   }
 
   .information__item {
     text-align: left;
+    margin-bottom: 26px;
+  }
+
+  .information__block-img .information__img:nth-child(1) {
+    position: static;
+
   }
 }
 
@@ -126,5 +140,10 @@
 
   .information__block-img {
     display: flex;
+    // position: static;
+    .information__img {
+      // position: static;
+      // margin: 0;
+    }
   }
 }

@@ -1,8 +1,10 @@
+// Блок с таблицей мне пока не дается, но
+//  я победю его
+
 .tariff {
   background-color: @color-grey;
   padding-top: 87px;
-  padding-bottom: 100px;
-  // padding: 20px;
+  padding-bottom: 69px;
   text-align: center;
  }
 
@@ -10,8 +12,9 @@
   background-color: @color-white;
   border-collapse: collapse;
   td {
+    font-size: 0;
     border: 2px solid @color-dark-grey;
-    min-width: 210px;
+    min-width: 130px;
     padding: 10px;
   }
 }
@@ -27,7 +30,7 @@
   text-transform: uppercase;
   .font-bold-18;
   font-size: 16px;
-  height: 100px; //временно
+  height: 80px; //временно
 }
 
 .tariff__table-header--price {
@@ -38,7 +41,7 @@
 .tariff__table-row {
   font-size: 14px;
   text-transform: uppercase;
-  height: 60px; //временно
+  height: 45px; //временно
 }
 
  .tariff__table-col1 {
@@ -48,7 +51,24 @@
  }
 
 @media @mobile-widths-only {
+  .tariff {
+    padding-bottom: 100px;
+  }
+
+  .tariff__table td {
+      min-width: 210px;
+  }
+
+
   .tariff__table-col1 {
   	display: none;
+  }
+
+  .tariff__table-header {
+    height: 100px; //временно
+  }
+
+  .tariff__table-row {
+    height: 60px; //временно
   }
 }

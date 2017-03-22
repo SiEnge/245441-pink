@@ -23,16 +23,22 @@
 }
 
 @media @tablet-widths {
+  .main-header__top {
+    height: 110px;
+  }
+
   .main-header__bottom {
     display: flex;
     flex-direction: row-reverse;
-    img {
-      margin-left: -100px; //проба пера
-    }
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
-  .main-header__top {
-      height: 110px;
+  .main-header__img {
+    height: 618px;
+    // margin-left: -100px; //проба пера
+
   }
 
   .main-header__title {
@@ -43,7 +49,6 @@
     padding-left: 25px;
     padding-right: 25px;
   }
-
 }
 
 @media @desktop-widths {
