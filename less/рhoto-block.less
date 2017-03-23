@@ -1,16 +1,26 @@
 .photo-block {
   background-color: @color-grey;
-  // padding: 0;
+  margin-bottom: 20px;
+  padding-bottom: 19px;
 }
 
-.photo-block__img--stretch {
-  padding: 0;
-  margin-left: -20px;
+.photo-block__gallery {
+  padding-top: 25px;
+}
 
+.photo-block__img img {
+  width: 280px;
+  height: 180px;
+}
+
+.photo-block--panorama img {
+  width: 320px;
+  height: 137px;
+  margin-left: -20px;
 }
 
 .photo-block__signature {
-  margin: 20px;
+  margin: 12px 19px 9px 19px;
 }
 
 .photo-block__name{
@@ -23,7 +33,60 @@
   font-size: 12px;
 }
 
+.photo-block__text {
+  margin: 0;
+}
+
 .photo-block__like {
   color: @color-pink;
-  margin: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  // margin: 5px 20px 20px 50px;
+  margin:  0 0 0 50px;
+}
+
+
+@media @tablet-widths {
+  .photo-block__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo-block {
+    width: 300px;
+  }
+
+  .photo-block__img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photo-block--panorama {
+    width: 620px;
+  }
+
+  .photo-block--panorama img {
+    width: 700px;
+    height: 300px;
+    margin-left: -40px;
+  }
+
+}
+
+@media @desktop-widths {
+  .photo-block__img img {
+      height: 400px;
+  }
+
+  .photo-block--panorama {
+    width: 940px;
+  }
+
+  .photo-block--panorama img {
+    width: 1200px;
+    height: 400px;
+    margin-left: -130px;
+  }
+
 }

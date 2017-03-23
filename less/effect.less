@@ -1,0 +1,59 @@
+.effect {
+  display: none;
+}
+
+@media @tablet-widths {
+  .effect {
+    display: block;
+  }
+
+  .effect__wrap {
+    display: flex;
+    padding-top: 97px;
+  }
+
+  .effect__block-text {
+    padding-left: 70px;
+    max-width: 310px;
+  }
+
+  .effect__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+
+  .effect__text {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .effect__link {
+    color: @color-pink;
+  }
+}
+
+
+@media @desktop-widths {
+  .effect {
+    background-color: @color-grey;
+  }
+
+  .effect__block-text {
+      max-width: 570px;
+    }
+
+  .effect__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+
+  .effect__text,
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

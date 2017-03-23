@@ -1,7 +1,37 @@
-.contest-form__check {
-  box-sizing: border-box;
-  background-color: @color-grey;
+// Не знаю как на версии Desktop поставить
+// рядом блок с выбором приложения
+
+.contest-form {
+  padding-top: 12px;
+}
+
+.contest-form__wrap {
+  position: relative;
   border: none;
+  &--bg-grey {
+    background-color: @color-grey;
+    padding-top: 100px;
+  }
+}
+
+.contest-form__legend {
+  position: absolute;
+  height: 1px;
+  width: 240px;
+  top: 20px;
+  padding-bottom: 10px;
+  color: @color-pink;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  &--hidden {
+    display: none;
+  }
+}
+
+.contest-form__item {
+  margin: 0;
+  margin-bottom: 17px;
 }
 
 
@@ -9,22 +39,28 @@
   display: block;
   color: @color-pink;
   text-transform: uppercase;
-  padding-left: 25px;
-
+  padding-left: 23px;
+  padding-bottom: 10px;
 }
 
 .contest-form__input {
+  width: 280px;
   box-sizing: border-box;
   border: 2px solid @color-grey;
-  padding: 20px;
+  padding: 18px 20px;
   font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contest-form__list {
+  .list-style-none;
+  margin: 0 auto;
 }
 
 .contest-form__btn {
-  margin: 0 auto;
-  width: 280px;
   display: block;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: @color-green;
   color: @color-white;
   text-transform: uppercase;
@@ -37,5 +73,41 @@
   margin: 0 auto;
   text-transform: uppercase;
   text-align: center;
+}
 
+@media @tablet-widths {
+  .contest-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contest-form__wrap {
+    border: 2px solid @color-grey;
+    &--bg-grey {
+      background-color: @color-white;
+    }
+    &--hidden {
+      border: none;
+    }
+    &--up {
+      order: -1;
+    }
+    &--down {
+      order: 1;
+    }
+  }
+
+  .contest-form__input {
+    width: 520px;
+  }
+
+  .contest-form__label--hidden {
+    display: block;
+  }
+}
+
+@media @desktop-widths {
+  .contest-form__input {
+    width: 940px;
+  }
 }

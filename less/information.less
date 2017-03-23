@@ -1,41 +1,104 @@
 .information {
   background-color: @color-grey;
+  text-align: center;
 }
 
 .information__intro {
   background-color: @color-white;
   text-align: center;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 1px;
 }
 
 .information__title {
   .font-light-24;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.information__block {
+  padding-top: 83px;
 }
 
 .information__list {
-  padding: 0;
+  .list-style-none;
+  margin-bottom: 32px;
 }
 
 .information__item {
   .list-style-none;
   text-align: center;
-  padding: 10px;
+  margin-bottom: 23px;
 }
 
 .information__name {
+  margin: 0;
   .font-bold-18;
   color: @color-black;
 }
 
+.information__text {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.information__img {
+  margin: 0 auto;
+  width: 162px;
+  height: 330px;
+}
+
+.information__block-img {
+  position: relative;
+  height: 277px;
+  overflow: hidden;
+}
+
+.information__block-img .information__img:nth-child(1) {
+  position: absolute;
+  bottom: -53px;
+  left: 62px;
+}
+
+.information__block-img .information__img:nth-child(n+2) {
+  display: none;
+}
+
 
 @media @tablet-widths {
+  .information__intro {
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+
   .information__title {
     width: 620px;
     font-size: 40px;
     line-height: 48px;
+    margin-bottom: 0;
   }
 
+  .information__block {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 75px;
+  }
 
+  .information__list {
+    max-width: 310px;
+    margin-bottom: 8px;
+  }
+
+  .information__item {
+    text-align: left;
+    margin-bottom: 26px;
+  }
+
+  .information__block-img .information__img:nth-child(1) {
+    position: static;
+
+  }
 }
 
 @media @desktop-widths {
@@ -45,4 +108,42 @@
     line-height: 48px;
   }
 
+  .information__list {
+    display: flex;
+    justify-content: space-around;
+    max-width: 940px;
+  }
+
+  .information__item {
+    max-width: 240px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .information__name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .information__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .information__block {
+    flex-direction: column-reverse;
+  }
+
+  .information__block-img .information__img:nth-child(n+2) {
+    display: block;
+  }
+
+  .information__block-img {
+    display: flex;
+    // position: static;
+    .information__img {
+      // position: static;
+      // margin: 0;
+    }
+  }
 }
