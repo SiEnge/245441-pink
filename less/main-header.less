@@ -1,8 +1,6 @@
 .main-header {
   background: @color-blue url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
-  &--small {
-    height: 237px;
-  }
+  background-size: cover;
 }
 
 .main-header__img {
@@ -11,52 +9,42 @@
   background: transparent url("../img/iphone-hand-mobile@1x.png") no-repeat bottom left;
 }
 
-.main-header__content {
-  text-align: center;
+.main-header__bottom {
+  min-height: 170px;
 }
 
 .main-header__title {
-  padding: 20px;
-  color: @color-white;
-  .font-light-24;
+  padding: 27px 20px 0 20px;
+  margin: 0;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 30px;
   text-align: center;
+  color: @color-white;
 }
 
 @media @tablet-widths {
-  .main-header__top {
-    height: 110px;
-  }
-
   .main-header__bottom {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    max-width: 700px;
-    margin: 0 auto;
+    min-height: 330px;
+    // display: flex;
+    // flex-direction: row-reverse;
+    // align-items: center;
   }
 
   .main-header__img {
     height: 618px;
-    // margin-left: -100px; //проба пера
-
   }
 
   .main-header__title {
-    margin-top: auto;
-    margin-bottom: auto;
+    padding: 70px 40px 0 40px;
     font-size: 50px;
     line-height: 60px;
-    padding-left: 25px;
-    padding-right: 25px;
   }
 }
 
 @media @desktop-widths {
   .main-header__bottom {
-    display: flex;
-    // flex-direction: row-reverse;
-    // justify-content: flex-end;
-    // height: 740px;
+    min-height: 285px;
   }
 
 

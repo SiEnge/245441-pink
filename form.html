@@ -12,6 +12,7 @@
 
 <body class="page">
   <header class="main-header main-header--small">
+
     <nav class="main-menu main-menu--nojs main-menu--closed container">
       <div class="main-menu__top">
         <a class="main-menu__logo" href="index.html">Пинк</a>
@@ -24,16 +25,23 @@
         <li class="main-menu__item"><a href="academy.html">HTML Academy</a></li>
       </ul>
     </nav>
+
     <div class="main-header__bottom container">
       <h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
+
   </header>
+
+
+
   <main class="main-page">
-    <p class="main-page__intro container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    <div class="container">
+      <p class="main-page__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="main-page__intro main-page__intro--hidden">Пожалуйста, заполните форму ниже:</p>
+    </div>
+    <form class="contest-form container" action="https://echo.htmlacademy.ru/" method="post">
 
-    <form class="contest-form" action="https://echo.htmlacademy.ru/" method="post">
-
-      <fieldset class="contest-form__wrap contest-form__wrap--hidden contest-form__wrap--up container">
+      <fieldset class="contest-form__wrap contest-form__wrap--hidden contest-form__wrap--up">
         <p class="contest-form__item">
           <label class="contest-form__label" for="surname">Фамилия:</label>
           <input class="contest-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
@@ -49,9 +57,9 @@
       </fieldset>
 
       <fieldset class="contest-form__wrap contest-form__wrap--bg-grey contest-form__wrap--down">
-        <legend class="contest-form__legend container">Ваши безбашенные достижения в путешествии</legend>
+        <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
 
-        <ul class="contest-form__list container">
+        <ul class="contest-form__list">
           <li>
             <label>
               <input type="checkbox" name="selfie-shark">
@@ -92,61 +100,61 @@
       </fieldset>
 
 
-      <fieldset class="contest-form__wrap container">
+      <fieldset class="contest-form__wrap ">
         <legend class="contest-form__legend contest-form__legend--hidden">
           Контактная информация
         </legend>
-        <p>
+        <p class="contest-form__item">
           <label class="contest-form__label" for="telephone">Номер телефона</label>
           <input class="contest-form__input" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
         </p>
-        <p>
+        <p class="contest-form__item">
           <label class="contest-form__label" for="mail">Адрес почты</label>
           <input class="contest-form__input" type="email" name="mail" id="mail" placeholder="Введите почту *" required>
         </p>
       </fieldset>
 
 
-      <fieldset class="contest-form__wrap contest-form__wrap--bg-grey contest-form__wrap--up container">
+      <fieldset class="contest-form__wrap contest-form__wrap--bg-grey contest-form__wrap--up">
         <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
-          <ul class="contest-form__list ">
-            <li>
-              <label>
+        <ul class="contest-form__list contest-form__list--radio">
+          <li>
+            <label>
                 <input type="radio" name="app" value="ios">
                 Pink для iOS
               </label>
-            </li>
-            <li>
-              <label>
+          </li>
+          <li>
+            <label>
                 <input type="radio" name="app" value="android">
                 Pink для Android
               </label>
-            </li>
-            <li>
-              <label>
+          </li>
+          <li>
+            <label>
                 <input type="radio" name="app" value="windows-phone">
                 Windows Phone
               </label>
-            </li>
-          </ul>
+          </li>
+        </ul>
       </fieldset>
-      <fieldset class="contest-form__wrap contest-form__wrap--down container">
+      <fieldset class="contest-form__wrap contest-form__wrap--down contest-form__wrap--textarea">
         <legend class="contest-form__legend">
           Опишите свои эмоции
         </legend>
-        <textarea class="contest-form__input" name="emotions" id="emotions" rows="6">
+        <textarea class="contest-form__input contest-form__input--textarea" name="emotions" id="emotions" rows="6">
           Можно прям в красках, не стесняясь в выражениях
         </textarea>
       </fieldset>
 
-      <button class="contest-form__btn container contest-form__wrap--down" type="submit">Отправить форму</button>
-      <p class="contest-form__comment contest-form__wrap--down"><span class="contest-form__comment--pink">*</span>-обязательные поля</p>
+      <button class="contest-form__btn contest-form__wrap--down " type="submit">Отправить форму</button>
+      <p class="contest-form__comment contest-form__wrap--down"><span class="contest-form__hint">*</span> — обязательные поля</p>
 
     </form>
   </main>
   <footer class="main-footer container">
     <p class="main-footer__logo">
-      <a class="main-footer-logo__img" href="#">Pink</a>
+      <a class="main-footer__logo-img" href="#"><img src="img/logo-pink-blue-mobile.svg">Pink</a>
     </p>
     <p class="main-footer__social">
       <a class="social-link social-link--tw" href="https://twitter.com/?lang=ru">Twitter</a>
@@ -155,7 +163,7 @@
     </p>
     <p class="main-footer__copyright">
       Разработано
-      <a class="main-footer__copyright--link" href="https://htmlacademy.ru/">HTML Academy</a>
+      <a class="main-footer__copyright--link" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg">HTML Academy</a>
     </p>
   </footer>
   <div class="popup popup__checkin popup--hidden">
