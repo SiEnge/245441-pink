@@ -9,46 +9,44 @@
   border-radius: 50%;
   vertical-align: center;
   margin: 14px 4px;
+  svg {
+    fill: @color-pink;
+    position: absolute;
+  }
 }
 
-.social-link--tw {
-  &::before {
-    content: "";
-    position: absolute;
+.social-link:hover {
+  border-color: @color-blue;
+}
+
+.social-link:active svg {
+  opacity: 0.3;
+}
+
+.social-link--tw svg {
     top: 17px;
     left: 17px;
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
-    background-position: left top;
-  }
+    width: 17px;
+    height: 14px;
 }
 
-.social-link--fb {
-  &::before {
-    content: "";
-    position: absolute;
+.social-link--fb svg {
     top: 15px;
     left: 20px;
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/icon-facebook.svg");
-    background-repeat: no-repeat;
-    background-position: left top;
-  }
+    width: 8px;
+    height: 17px;
 }
 
-.social-link--yt {
-  &::before {
-    content: "";
-    position: absolute;
+.social-link--yt svg {
     top: 18px;
     left: 19px;
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/icon-youtube.svg");
-    background-repeat: no-repeat;
-    background-position: left top;
+    width: 14px;
+    height: 13px;
+}
+
+@media @tablet-widths  {
+  .social-link {
+    margin-left: 3px;
+    margin-right: 3px;
   }
 }

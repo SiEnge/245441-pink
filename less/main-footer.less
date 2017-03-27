@@ -1,3 +1,7 @@
+.main-footer {
+  margin-top: 45px;
+}
+
 .main-footer--mobile-hidden {
 	display: none;
 }
@@ -10,28 +14,92 @@
   width: 147px;
   height: 40px;
   font-size: 0;
+  svg {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+.main-footer__logo-pink {
+  fill: @color-blue;
+}
+
+.main-footer__logo-glasses {
+  fill: @color-pink;
+}
+
+.main-footer__logo-img:hover .main-footer__logo-pink {
+  fill: @color-pink;
+}
+
+.main-footer__logo-img:active {
+  opacity: 0.3;
+  .main-footer__logo-pink {
+    fill: @color-blue;
+  }
 }
 
 .main-footer__social {
+  margin: 15px 0;
   text-align: center;
+  vertical-align: middle;
 }
 
 .main-footer__copyright {
+  margin: 25px 0 0 0 ;
   text-align: center;
-  &--link {
-    font-size: 0;
-    vertical-align: middle;
+  vertical-align: middle;
+}
+
+.main-footer__copyright--text {
+  display: inline-block;
+  padding-right: 13px;
+}
+
+.main-footer__copyright--link {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: middle;
+  height: 34px;
+  svg {
+    width: 27px;
+    height: 34px;
+	  fill: @color-pink;
   }
 }
+
+.main-footer__copyright--link:hover svg {
+	fill: @color-blue;
+}
+
+.main-footer__copyright--link:active svg {
+	fill: rgb(190, 194, 199);
+}
+
 
 @media @tablet-widths  {
 	.main-footer {
 		display: flex;
 		justify-content: space-around;
 	}
+
+  .main-footer__social {
+    margin: 0;
+    margin-right: 15px;
+  }
 }
 
 
 @media @desktop-widths {
+  .main-footer {
+    justify-content: space-between;
+  }
 
+  .main-footer__social {
+    margin: 0;
+    margin-left: 15px;
+  }
+  .main-footer__copyright {
+    font-size: 18px;
+  }
 }
