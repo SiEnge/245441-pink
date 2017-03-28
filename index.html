@@ -106,39 +106,42 @@
       <label class="slider__toggle" for="feedback-input-2">2</label>
       <label class="slider__toggle" for="feedback-input-3">3</label> -->
     </article>
-    <section class="tariff">
+    <section class="tariff container">
+      <div class="tariff__wrap">
       <!-- <input class="slider__input" type="radio" name="tariff" id="tariff-input-1">
       <input class="slider__input" type="radio" name="tariff" id="tariff-input-2" checked>
       <input class="slider__input" type="radio" name="tariff" id="tariff-input-3"> -->
-      <table class="tariff__table container">
-        <tr class="tariff__table-header">
-          <td class="tariff__table-col1"></td>
-          <td class="tariff__table-col2">База<br><span class="tariff__table-header--price">1,99 USD</span></td>
-          <td class="tariff__table-col3">Стандарт<br><span class="tariff__table-header--price">3,99 USD</span></td>
-          <td class="tariff__table-col4">Анлим<br><span class="tariff__table-header--price">9,99 USD</span></td>
-        </tr>
-        <tr class="tariff__table-row">
-          <td class="tariff__table-col1">Розовый фильтр</td>
-          <td class="tariff__table-col2">Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
-          <td class="tariff__table-col3">Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
-          <td class="tariff__table-col4">Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
-        </tr>
-        <tr class="tariff__table-row">
-          <td class="tariff__table-col1">Смайлики</td>
-          <td class="tariff__table-col2">Смайлики <span class="tariff__table-no">No</span></td>
-          <td class="tariff__table-col3">Смайлики <span class="tariff__table-yes">Yes</span></td>
-          <td class="tariff__table-col4">Смайлики <span class="tariff__table-yes">Yes</span></td>
-        </tr>
-        <tr class="tariff__table-row">
-          <td class="tariff__table-col1">Комментарии</td>
-          <td class="tariff__table-col2">Комментарии <span class="tariff__table-no">No</span></td>
-          <td class="tariff__table-col3">Комментарии <span class="tariff__table-no">No</span></td>
-          <td class="tariff__table-col4">Комментарии <span class="tariff__table-yes">Yes</span></td>
-        </tr>
-      </table>
+        <table class="tariff__table container">
+          <tr class="tariff__table-header">
+            <td class="tariff__table-col1"></td>
+            <td class="tariff__table-col2">База<br><span class="tariff__table-header--price">1,99 USD</span></td>
+            <td class="tariff__table-col3"><span class="tariff__flag">Хит</span>Cтандарт<br><span class="tariff__table-header--price">3,99 USD</span></td>
+            <td class="tariff__table-col4">Анлим<br><span class="tariff__table-header--price">9,99 USD</span></td>
+          </tr>
+          <tr class="tariff__table-row">
+            <td class="tariff__table-col1">Розовый фильтр</td>
+            <td class="tariff__table-col">Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
+            <td class="tariff__table-col">Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
+            <td class="tariff__table-col">Розовый фильтр <span class="tariff__table-yes">Yes</span></td>
+          </tr>
+          <tr class="tariff__table-row">
+            <td class="tariff__table-col1">Смайлики</td>
+            <td class="tariff__table-col">Смайлики <span class="tariff__table-no">No</span></td>
+            <td class="tariff__table-col">Смайлики <span class="tariff__table-yes">Yes</span></td>
+            <td class="tariff__table-col">Смайлики <span class="tariff__table-yes">Yes</span></td>
+          </tr>
+          <tr class="tariff__table-row">
+            <td class="tariff__table-col1">Комментарии</td>
+            <td class="tariff__table-col">Комментарии <span class="tariff__table-no">No</span></td>
+            <td class="tariff__table-col">Комментарии <span class="tariff__table-no">No</span></td>
+            <td class="tariff__table-col">Комментарии <span class="tariff__table-yes">Yes</span></td>
+          </tr>
+        </table>
+      </div>
       <!-- <label class="tariff__toggle" for="tariff-input-1">1</label>
       <label class="tariff__toggle" for="tariff-input-2">2</label>
       <label class="tariff__toggle" for="tariff-input-3">3</label> -->
+
     </section>
     <section class="contacts container">
       <b class="contacts__intro">Остались вопросы?<br>Свяжитесь с нами!</b>
@@ -156,7 +159,11 @@
           <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
         </div>
       </div>
-      <a href="map.html">Карта <img src="http://placehold.it/320x200" width="320" height="200" alt="Карта"></a>
+
+      <!-- <a href="map.html">Карта <img src="http://placehold.it/320x200" width="320" height="200" alt="Карта"></a> -->
+      <div class="contacts__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.32089461517372!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1479751376482" width="320" height="200" allowfullscreen></iframe>
+      </div>
     </section>
   </main>
   <footer class="main-footer main-footer--mobile-hidden container">

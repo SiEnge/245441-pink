@@ -27,6 +27,25 @@
   margin: 0;
 }
 
+.contacts__map {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -150px;
+    width: 596px;
+    height: 62px;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+  }
+  
+  iframe {
+    border: none;
+    width: 320px;
+    height: 200px;
+  }
+}
+
 
 @media @tablet-widths {
   .contacts__wrap {
