@@ -1,12 +1,12 @@
 .main-page__intro {
   padding: 46px 20px 5px 20px;
-  margin: 0;
   text-align: center;
   line-height: 30px;
   &--hidden {
     display: none;
   }
 }
+
 
 @media @tablet-widths {
   .main-page__intro {
@@ -16,11 +16,21 @@
       display: block;
     }
   }
+
+  .main-page__intro--hidden {
+    display: inline;
+  }
+
+  .main-page__intro-text {
+    padding: 0 80px;
+  }
 }
 
 @media @desktop-widths {
   .main-page__intro {
     font-size: 18px;
-    // margin: 100px 95px 23px 95px;
+    margin: 0 130px;
   }
+
+
 }

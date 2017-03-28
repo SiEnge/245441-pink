@@ -6,13 +6,12 @@
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
   <!-- <link rel="stylesheet/less" type="text/css" href="less/style.less">
-  <script src="less.js" type="text/javascript"></script> -->
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/CCDAD842-443E-2A47-A7F8-92A756EE10C8/main.js" charset="UTF-8"></script><script src="less.js" type="text/javascript"></script> -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="page">
   <header class="main-header main-header--small">
-
     <nav class="main-menu main-menu--nojs main-menu--closed container">
       <div class="main-menu__top">
         <a class="main-menu__logo" href="index.html">Пинк</a>
@@ -36,12 +35,11 @@
 
   <main class="main-page">
     <div class="container">
-      <p class="main-page__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-      <p class="main-page__intro main-page__intro--hidden">Пожалуйста, заполните форму ниже:</p>
+      <p class="main-page__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="main-page__intro--hidden">Пожалуйста, заполните форму ниже:</span></p>
     </div>
     <form class="contest-form container" action="https://echo.htmlacademy.ru/" method="post">
 
-      <fieldset class="contest-form__wrap contest-form__wrap--hidden contest-form__wrap--up">
+      <fieldset class="contest-form__wrap contest-form__wrap--hidden contest-form__field-name">
         <p class="contest-form__item">
           <label class="contest-form__label" for="surname">Фамилия:</label>
           <input class="contest-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
@@ -56,13 +54,14 @@
         </p>
       </fieldset>
 
-      <fieldset class="contest-form__wrap contest-form__wrap--bg-grey contest-form__wrap--down">
+
+      <fieldset class="contest-form__wrap contest-form__wrap--bg-grey contest-form__field-progress">
         <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
 
         <ul class="contest-form__list">
           <li>
             <label class="contest-form__checkbox contest-form__checkbox--active">
-              <input type="checkbox" name="selfie-shark">
+              <input class="contest-form__cb" type="checkbox" name="selfie-shark">
               Сделал селфи с акулой
             </label>
           </li>
@@ -100,53 +99,55 @@
       </fieldset>
 
 
-      <fieldset class="contest-form__wrap ">
+      <fieldset class="contest-form__wrap contest-form__field-contact">
         <legend class="contest-form__legend contest-form__legend--hidden">
           Контактная информация
         </legend>
-        <p class="contest-form__item">
+        <p class="contest-form__item-cont">
           <label class="contest-form__label" for="telephone">Номер телефона</label>
           <input class="contest-form__input" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
         </p>
-        <p class="contest-form__item">
+        <p class="contest-form__item-cont">
           <label class="contest-form__label" for="mail">Адрес почты</label>
           <input class="contest-form__input" type="email" name="mail" id="mail" placeholder="Введите почту *" required>
         </p>
       </fieldset>
 
-
-      <fieldset class="contest-form__wrap contest-form__wrap--bg-grey contest-form__wrap--up">
+      <fieldset class="contest-form__wrap contest-form__wrap--bg-grey contest-form__field-app">
         <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
         <ul class="contest-form__list contest-form__list--radio">
           <li>
-            <label>
+            <label class="contest-form__radio contest-form__radio--active">
                 <input type="radio" name="app" value="ios">
                 Pink для iOS
-              </label>
+             </label>
           </li>
           <li>
-            <label>
+            <label class="contest-form__radio">
                 <input type="radio" name="app" value="android">
                 Pink для Android
-              </label>
+             </label>
           </li>
           <li>
-            <label>
+            <label class="contest-form__radio">
                 <input type="radio" name="app" value="windows-phone">
                 Windows Phone
-              </label>
+             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="contest-form__wrap contest-form__wrap--down contest-form__wrap--textarea">
+
+      <fieldset class="contest-form__wrap contest-form__field-emotion">
         <legend class="contest-form__legend">Опишите свои эмоции</legend>
-        <textarea class="contest-form__input contest-form__input--textarea" name="emotions" id="emotions" rows="6">
+        <textarea class="contest-form__input contest-form__input-emotion" name="emotions" id="emotions">
           Можно прям в красках, не стесняясь в выражениях
         </textarea>
       </fieldset>
 
-      <button class="contest-form__btn contest-form__wrap--down " type="submit">Отправить форму</button>
-      <p class="contest-form__comment contest-form__wrap--down"><span class="contest-form__hint">*</span> — обязательные поля</p>
+      <div class="contest-form__bottom container">
+	      <button class="contest-form__btn" type="submit">Отправить форму</button>
+	      <p class="contest-form__comment"><span class="contest-form__hint">*</span> — обязательные <span class="contest-form__comment--hidden">для заполнения </span>поля</p>
+      </div>
 
     </form>
   </main>
@@ -219,7 +220,6 @@
   <script>
     var navMenu = document.querySelector(".main-menu");
     var navToggle = document.querySelector(".main-menu__burger");
-    var inputCheckbox = document.querySelector(".contest-form__checkbox");
 
     navMenu.classList.remove("main-menu--nojs");
 
@@ -232,15 +232,6 @@
         navMenu.classList.remove("main-menu--opened");
       }
     });
-
-
-    inputCheckbox.addEventListener("click", function() {
-     if (inputCheckbox.checked) {
-      inputCheckbox.classList.add("contest-form__checkbox--active");
-     } else {
-      inputCheckbox.classList.remove("contest-form__checkbox--active");
-     }
-   });
 
   </script>
 </body>
