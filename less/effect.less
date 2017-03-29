@@ -10,6 +10,8 @@
   .effect__wrap {
     display: flex;
     padding-top: 97px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .effect__block-text {
@@ -35,23 +37,44 @@
   }
 }
 
-
 @media @desktop-widths {
   .effect {
     background-color: @color-grey;
+    padding-bottom: 58px;
+  }
+
+  .effect__wrap {
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .effect__img {
+    width: 298px;
+    height: 345px;
   }
 
   .effect__block-text {
-      max-width: 570px;
-    }
+    max-width: 570px;
+    padding-top: 80px;
+  }
 
   .effect__title {
+    margin-bottom: 22px;
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
+    br {
+      display: none;
+    }
   }
 
-  .effect__text,
+  .effect__text {
+    padding-right: 50px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+
   .effect__link {
     font-size: 18px;
     line-height: 30px;

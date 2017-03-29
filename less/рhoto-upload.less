@@ -1,5 +1,6 @@
 .photo-upload__intro {
-  padding: 24px 20px 40px 20px;
+  padding: 20px 20px 40px 20px;
+  margin: 0;
   text-align: center;
   line-height: 30px;
 }
@@ -9,7 +10,7 @@
   background-color: @color-grey;
 }
 
-.photo-upload__img {
+.photo-upload__img img {
   width: 280px;
   height: 374px;
 }
@@ -40,5 +41,37 @@
 @media @tablet-widths {
   .photo-upload__wrap {
     display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 56px;
   }
+
+  .photo-upload__intro {
+    padding-top: 45px;
+    padding-bottom: 70px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .photo-upload__img {
+    padding-right: 48px;
+    img {
+      width: 300px;
+      height: 400px;
+    }
+  }
+}
+
+
+@media @desktop-widths {
+  .photo-upload__wrap {
+    width: 780px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 56px;
+    padding-bottom: 50px;
+  }
+
+
 }

@@ -24,15 +24,20 @@
 }
 
 @media @tablet-widths {
-  .main-header__bottom {
-    min-height: 330px;
-    // display: flex;
-    // flex-direction: row-reverse;
-    // align-items: center;
+  .main-header__download {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
   }
 
   .main-header__img {
     height: 618px;
+  }
+
+  .main-header__bottom {
+    min-height: 330px;
   }
 
   .main-header__title {
@@ -43,14 +48,17 @@
 }
 
 @media @desktop-widths {
+  .main-header__download {
+    padding-top: 80px;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
   .main-header__bottom {
     min-height: 285px;
   }
 
   .main-header__title {
     padding: 65px 130px 0 130px;
-
   }
-
-
 }

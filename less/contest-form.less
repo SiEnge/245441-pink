@@ -1,3 +1,6 @@
+// не знаю как сделать раскладку на десктопной версии
+
+
 .contest-form__wrap {
   position: relative;
   padding: 35px 20px 23px 20px;
@@ -7,8 +10,12 @@
     background-color: @color-grey;
     padding-top: 90px;
   }
-  // Должны ли серые блоки тянуться
-  // на всю ширину на мобильной версии?
+}
+
+.contest-form__item {
+  margin: 0;
+  margin-bottom: 17px;
+  display: inline;
 }
 
 .contest-form__legend {
@@ -26,6 +33,24 @@
   }
 }
 
+.contest-form__label {
+  display: block;
+  color: @color-pink;
+  text-transform: uppercase;
+  padding-left: 23px;
+  padding-bottom: 9px;
+}
+
+.contest-form__input {
+  width: 280px;
+  box-sizing: border-box;
+  border: 2px solid @color-grey;
+  padding: 18px 20px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+
 .contest-form__list li {
   font-size: 18px;
   padding-left: 68px;
@@ -33,7 +58,7 @@
   padding-bottom: 29px;
 }
 
-.contest-form__list--radio li {
+.contest-form__list-app li {
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -64,7 +89,6 @@
   height: 16px;
   background: url("../img/icon-yes-pink.svg") no-repeat;
 }
-
 
 .contest-form__radio {
   position: relative;
@@ -109,29 +133,6 @@
   background-color: @color-pink;
 }
 
-.contest-form__item {
-  margin: 0;
-  margin-bottom: 17px;
-  display: inline;
-}
-
-
-.contest-form__label {
-  display: block;
-  color: @color-pink;
-  text-transform: uppercase;
-  padding-left: 23px;
-  padding-bottom: 9px;
-}
-
-.contest-form__input {
-  width: 280px;
-  box-sizing: border-box;
-  border: 2px solid @color-grey;
-  padding: 18px 20px;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-}
 
 .contest-form__field-emotion .contest-form__legend {
   top: 0;
@@ -151,11 +152,14 @@
   margin: 0 auto;
 }
 
+.contest-form__bottom-wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .contest-form__btn {
   display: block;
   width: 280px;
-  margin: 20px;
-
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: @color-green;
@@ -182,6 +186,8 @@
 
 @media @tablet-widths {
   .contest-form {
+    padding-top: 30px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -191,7 +197,7 @@
     padding: 0;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     &--bg-grey {
       background-color: @color-white;
     }
@@ -218,23 +224,29 @@
   .contest-form__field-app {
     padding: 35px 60px 38px 60px;
     order: -1;
+    margin-bottom: 65px;
   }
 
   .contest-form__field-progress {
-    padding: 35px 60px 38px 60px;
+    padding: 30px 60px;
+    margin-bottom: 60px;
     order: 1;
   }
 
   .contest-form__field-contact {
-    padding: 44px 59px 0 57px;
+    padding: 30px 59px 0 57px;
+    margin-bottom: 65px;
   }
 
   .contest-form__field-emotion {
     padding: 45px 58px 43px 58px;
+    order: 1;
+    margin-bottom: 65px;
   }
 
   .contest-form__input-emotion {
     height: 192px;
+
   }
 
 
@@ -255,8 +267,10 @@
   }
 
   .contest-form__legend {
+    position: absolute;
     top: -9px;
-    padding-left: -350px;
+    left: 50%;
+    // padding-left: -140px;
     background-color: @color-white;
     &--hidden {
       display: block;
@@ -302,12 +316,25 @@
     left: -48px;
   }
 
-  .contest-form__bottom {
+  .contest-form__checkbox::before {
+    left: -60px;
+  }
+
+  .contest-form__checkbox--active::after {
+    left: -52px;
+  }
+
+  .contest-form__bottom-wrap {
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
+  .contest-form__btn {
+    width: 300px;
+  }
 }
 
 @media @desktop-widths {
@@ -336,8 +363,7 @@
   }
 
   .contest-form__field-contact {
-    display: flex;
-    flex-direction: row-reverse;
+
   }
 
   .contest-form__item-cont {
@@ -348,12 +374,12 @@
     padding: 20px 40px;
   }
 
-  .contest-form__field-progress .contest-form__list {
+  .contest-form__list-progress {
     display: flex;
+    // flex-direction: column;
     flex-wrap: wrap;
-    li {
-      width: 260px;
-    }
+    justify-content: space-between;
+
   }
 
   .contest-form__field-emotion {
