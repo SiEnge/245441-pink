@@ -40,11 +40,18 @@
 
 .contest-form__input {
   width: 280px;
+  padding: 18px 20px;
   box-sizing: border-box;
   border: 2px solid @color-grey;
-  padding: 18px 20px;
+  border-radius: 2px;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
+  &:hover {
+    border-color: @color-blue;
+  }
+  &:active {
+    border-color: @color-pink;
+  }
 }
 
 .contest-form__checkbox {
@@ -69,6 +76,7 @@
   height: 35px;
   background-color: @color-white;
   border: 2px solid @color-dark-grey;
+  border-radius: 2px;
 }
 
 .contest-form__checkbox-input:checked + .contest-form__checkbox-label::after {
@@ -78,7 +86,7 @@
   left: 17px;
   width: 22px;
   height: 16px;
-  background: url("../img/icon-yes-pink.svg") no-repeat;
+  background: url("../img/icons/icon-yes-pink.svg") no-repeat;
 }
 
 .contest-form__radio {
@@ -150,12 +158,25 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: @color-green;
+  border: none;
+  border-radius: 2px;
   color: @color-white;
   text-transform: uppercase;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+  &:hover {
+    background-color: @color-dark-green;
+  }
+  &:active span {
+    opacity: 0.3;
+  }
+  &:disabled {
+    background-color: rgb(229, 229, 229);
+  }
 }
+
+
 
 .contest-form__comment {
   padding: 10px;
@@ -174,7 +195,7 @@
 @media @tablet-widths {
   .contest-form {
     padding-top: 30px;
-    padding-bottom: 20px;   
+    padding-bottom: 20px;
   }
 
   .contest-form__wrap {
@@ -186,6 +207,7 @@
 
   .contest-form__field {
     border: 2px solid @color-grey;
+    border-radius: 2px;
     padding: 0;
     margin-bottom: 15px;
     &--bg-grey {
@@ -354,7 +376,7 @@
   .contest-form__bottom {
     display: flex;
     justify-content: flex-end;
-    
+
   }
 
   .contest-form__comment--hidden {

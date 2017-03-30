@@ -44,6 +44,7 @@
       <div class="main-header__download">
         <div class="main-header__img container"></div>
         <article class="download">
+
           <div class="download__wrap">
             <h1 class="download__title">Взгляните на&nbsp;жизнь иначе!</h1>
             <a class="download__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
@@ -56,8 +57,8 @@
               Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
             </p>
           </div>
+        </article>
       </div>
-      </article>
     </div>
 
   </header>
@@ -184,11 +185,9 @@
           <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
         </div>
       </div>
-
-      <!-- <a href="map.html">Карта <img src="http://placehold.it/320x200" width="320" height="200" alt="Карта"></a> -->
       <div class="contacts__map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.32089461517372!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1479751376482"
-             allowfullscreen></iframe>
+            allowfullscreen></iframe>
       </div>
     </section>
   </main>
@@ -244,23 +243,7 @@
       </a>
     </p>
   </footer>
-
-  <script>
-    var navMenu = document.querySelector(".main-menu");
-    var navToggle = document.querySelector(".main-menu__burger");
-
-    navMenu.classList.remove("main-menu--nojs");
-
-    navToggle.addEventListener("click", function() {
-      if (navMenu.classList.contains("main-menu--closed")) {
-        navMenu.classList.remove("main-menu--closed");
-        navMenu.classList.add("main-menu--opened");
-      } else {
-        navMenu.classList.add("main-menu--closed");
-        navMenu.classList.remove("main-menu--opened");
-      }
-    });
-  </script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

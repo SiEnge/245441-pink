@@ -34,8 +34,8 @@
         <button class="main-menu__burger" type="button">Открыть меню</button>
       </div>
       <ul class="main-menu__list">
-        <li class="main-menu__item main-menu__item--active"><a href="index.html">Главная</a></li>
-        <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-menu__item"><a href="index.html">Главная</a></li>
+        <li class="main-menu__item main-menu__item--active"><a href="photo.html">Фотографии</a></li>
         <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
         <li class="main-menu__item"><a href="academy.html">HTML Academy</a></li>
       </ul>
@@ -208,22 +208,7 @@
       </a>
     </p>
   </footer>
-  <script>
-    var navMenu = document.querySelector(".main-menu");
-    var navToggle = document.querySelector(".main-menu__burger");
-
-    navMenu.classList.remove("main-menu--nojs");
-
-    navToggle.addEventListener("click", function() {
-      if (navMenu.classList.contains("main-menu--closed")) {
-        navMenu.classList.remove("main-menu--closed");
-        navMenu.classList.add("main-menu--opened");
-      } else {
-        navMenu.classList.add("main-menu--closed");
-        navMenu.classList.remove("main-menu--opened");
-      }
-    });
-  </script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

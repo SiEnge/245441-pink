@@ -33,9 +33,9 @@
         <button class="main-menu__burger" type="button">Открыть меню</button>
       </div>
       <ul class="main-menu__list">
-        <li class="main-menu__item main-menu__item--active"><a href="index.html">Главная</a></li>
+        <li class="main-menu__item"><a href="index.html">Главная</a></li>
         <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-menu__item main-menu__item--active"><a href="form.html">Конкурс</a></li>
         <li class="main-menu__item"><a href="academy.html">HTML Academy</a></li>
       </ul>
     </nav>
@@ -88,22 +88,22 @@
             <label class="contest-form__checkbox" for="chuck-norris">
               <input class="contest-form__checkbox-input" type="checkbox" name="chuck-norris" id="chuck-norris">
               <span class="contest-form__checkbox-label">Видел Чака Норриса</span>
-            </label>  
+            </label>
             <label class="contest-form__checkbox" for="buy-souvenirs">
               <input class="contest-form__checkbox-input" type="checkbox" name="buy-souvenirs" id="buy-souvenirs">
               <span class="contest-form__checkbox-label">Накупил сувениров</span>
             </label>
-          </div> 
+          </div>
           <div class="contest-form__col-progress">
             <label class="contest-form__checkbox" for="keep-tower">
               <input class="contest-form__checkbox-input" type="checkbox" name="keep-tower" id="keep-tower">
               <span class="contest-form__checkbox-label">Удержал башню</span>
-            </label>  
+            </label>
             <label class="contest-form__checkbox" for="defeat-hotel">
               <input class="contest-form__checkbox-input" type="checkbox" name="defeat-hotel" id="defeat-hotel">
               <span class="contest-form__checkbox-label">Разгромил отель</span>
-            </label>   
-          </div>    
+            </label>
+          </div>
         </fieldset>
 
 
@@ -131,11 +131,11 @@
           <label class="contest-form__radio" for="android">
             <input class="contest-form__radio-input" type="radio" name="app" value="android" id="android">
             <span class="contest-form__radio-label">Pink для Android</span>
-          </label>  
+          </label>
           <label class="contest-form__radio" for="windows-phone">
             <input class="contest-form__radio-input" type="radio" name="app" value="windows-phone" id="windows-phone">
             <span class="contest-form__radio-label">Windows Phone</span>
-          </label>  
+          </label>
         </fieldset>
 
         <fieldset class="contest-form__field contest-form__field-emotion">
@@ -145,7 +145,7 @@
           </textarea>
         </fieldset>
         <div class="contest-form__bottom">
-          <button class="contest-form__btn" type="submit">Отправить форму</button>
+          <button class="contest-form__btn" type="submit"><span>Отправить форму</span></button>
           <p class="contest-form__comment"><span class="contest-form__hint">*</span> — обязательные <span class="contest-form__comment--hidden">для заполнения </span>поля</p>
         </div>
       </div>
@@ -205,34 +205,19 @@
   </footer>
   <div class="popup popup__checkin popup--hidden">
     <div class="popup__title">Ваша заявка отправлена</div>
-    <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
     <div class="popup__wrap popup__wrap--grey">
       <a class="popup__btn" href="#">Закрыть окно</a>
     </div>
   </div>
   <div class="popup popup__error popup--hidden">
-    <div class="popup__title">Что-то пошло не так!</div>
+    <div class="popup__title">Что-то пошло не&nbsp;так!</div>
     <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <div class="popup__wrap">
       <a class="popup__btn" href="#">ОК</a>
     </div>
   </div>
-  <script>
-    var navMenu = document.querySelector(".main-menu");
-    var navToggle = document.querySelector(".main-menu__burger");
-
-    navMenu.classList.remove("main-menu--nojs");
-
-    navToggle.addEventListener("click", function() {
-      if (navMenu.classList.contains("main-menu--closed")) {
-        navMenu.classList.remove("main-menu--closed");
-        navMenu.classList.add("main-menu--opened");
-      } else {
-        navMenu.classList.add("main-menu--closed");
-        navMenu.classList.remove("main-menu--opened");
-      }
-    });
-  </script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
