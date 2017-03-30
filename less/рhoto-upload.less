@@ -15,6 +15,67 @@
   height: 374px;
 }
 
+
+.photo-upload__edit-wrap {
+  text-align: center;
+}
+
+.photo-upload__edit {
+  font-size: 0;
+}
+
+.photo-upload__icon {
+  display: inline-block;
+  vertical-align: center;
+  padding: 50px 20px 20px 20px;
+  svg {
+    width: 48px;
+    height: 48px;
+    fill: @color-dark-grey;
+  }
+}
+
+.photo-upload__contrast svg {
+  width: 32px;
+  height: 32px;  
+}
+
+.photo-upload__scale-wrap {
+  padding-bottom: 40px;
+  border-bottom: 1px solid @color-dark-grey;
+}
+
+.photo-upload__scale {
+  display: none;
+  position: relative;
+}
+
+.photo-upload__scale:nth-child(1) {
+  display: block;
+}
+
+.photo-upload__bar {
+  height: 2px;
+  //margin-right: 25px;
+  background: @color-black;
+}
+
+.photo-upload__toggle {
+  position: absolute;
+  top: -6px;
+  right: 50px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid @color-pink;
+  background: @color-grey;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.photo-upload__btn-wrap {
+  padding-top: 20px;
+}
+
 .photo-upload__btn {
   width: 280px;
   margin-bottom: 20px;
@@ -32,11 +93,6 @@
   }
 }
 
-.photo-upload__edit {
-  height: 317px; //временно
-  outline: 3px solid rgba(155, 145, 82, 0.9); //временно
-  outline-offset: -3px; //временно
-}
 
 @media @tablet-widths {
   .photo-upload__wrap {
@@ -60,6 +116,30 @@
       height: 400px;
     }
   }
+
+  .photo-upload__edit-wrap {
+    //display: flex;
+  }
+
+  .photo-upload__edit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-upload__icon {
+    padding-top: 20px;
+  }
+
+  .photo-upload__scale-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-upload__scale {
+    display: block;
+    padding-bottom: 20px;
+}
+
 }
 
 
