@@ -180,6 +180,10 @@
 @media @desktop-widths {
   .main-menu {
     background-color: @color-black-30;
+
+  }
+
+  .main-menu__wrap {
     display: flex;
     justify-content: space-between;
   }
@@ -215,6 +219,14 @@
     font-size: 18px;
     font-weight: normal;
     box-shadow: none;
+  }
+
+  .main-menu__item--active a {
+    padding-bottom: 7px;
+    border-bottom: 2px solid @color-white;
+    &:hover {
+      border-color: @color-pink;
+    }
   }
 
   .main-menu__item:last-child a {
