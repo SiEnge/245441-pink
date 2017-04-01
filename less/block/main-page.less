@@ -1,0 +1,33 @@
+.main-page__intro {
+  padding: 30px 20px 5px 20px;
+  text-align: center;
+  line-height: 30px;
+  &--hidden {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .main-page__intro {
+    font-size: 18px;
+    padding: 75px 40px 23px 40px;
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .main-page__intro--hidden {
+    display: inline;
+  }
+
+  .main-page__intro-text {
+    padding: 0 80px;
+  }
+}
+
+@media @desktop-widths {
+  .main-page__intro {
+    font-size: 18px;
+    padding: 75px 220px 23px 220px;
+  }
+}
