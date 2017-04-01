@@ -1,13 +1,11 @@
 .download {
   background-color: @color-dark-blue;
   color: @color-white;
-  padding-top: 28px;
-  padding-bottom: 27px;
+  padding: 27px 20px 31px 20px;
 }
 
 .download__wrap {
-  max-width: 280px;
-  padding: 0 20px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -15,7 +13,8 @@
   margin-bottom: 30px;
   display: block;
   padding: 13px 0;
-  .font-bold-18;
+  font-weight: bold;
+  font-size: 18px;
   text-align: center;
   color: @color-white;
   text-decoration: none;
@@ -31,12 +30,36 @@
 }
 
 .download__link {
-  height: 60px; //временно
-  outline: 3px solid rgba(155, 145, 82, 0.9); //временно
-  outline-offset: -3px; //временно
-
+  padding: 0 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
   margin-bottom: 22px;
+}
+
+.download__link--apple {
+  width: 47px;
+  height: 57px;
+  font-size: 0;
+  background-image: url("../img/icons/logo-apple.svg");
+  background-repeat: no-repeat;
+}
+
+.download__link--android {
+  width: 42px;
+  height: 47px;
+  font-size: 0;
+  background-image: url("../img/icons/logo-android.svg");
+  background-repeat: no-repeat;
+}
+
+.download__link--windows {
+  width: 44px;
+  height: 42px;
+  font-size: 0;
+  background-image: url("../img/icons/logo-microsoft.svg");
+  background-repeat: no-repeat;
 }
 
 .download__text {
@@ -51,21 +74,23 @@
 @media @tablet-widths {
   .download {
     background-color: transparent;
+    margin-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .download__wrap {
-    padding-left: 40px;
     min-width: 300px;
   }
 
   .download__title {
     display: block;
-    .font-light-24;
+    padding-bottom: 32px;
+    margin: 0;
+    font-weight: lighter;
     font-size: 40px;
     text-align: center;
     line-height: 48px;
-    padding-bottom: 38px;
-    margin: 0;
   }
 
   .download__btn {
@@ -74,6 +99,7 @@
 
   .download__link {
     margin-bottom: 38px;
+    padding: 0 30px;
   }
 
   .download__text {
@@ -82,18 +108,23 @@
   }
 }
 
-
 @media @desktop-widths {
   .download {
-    margin: 0 auto;
+    margin-bottom: 70px;
   }
 
   .download__title {
     font-size: 50px;
     line-height: 60px;
+    padding-bottom: 52px;
   }
 
   .download__btn {
     font-size: 21px;
+    margin-bottom: 67px;
+  }
+
+  .download__link {
+    margin-bottom: 55px;
   }
 }

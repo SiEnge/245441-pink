@@ -1,7 +1,3 @@
-// Пока не придумала, как сделать
-// открытое меню в потоке
-
-
 .main-menu {
   position: relative;
   background-color: @color-blue;
@@ -17,24 +13,37 @@
 }
 
 .main-menu__logo {
+  display: block;
+  width: 147px;
+  height: 40px;
   font-size: 0;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 21px;
-    left: 0;
-    width: 75px;
-    height: 22px;
-    background-image: url("../img/logo-pink-white-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: left top;
+  margin-left: -53px;
+  padding-top: 5px;
+  svg {
+    width: 147px;
+    height: 40px;
+    fill: @color-white;
   }
+}
+
+.main-menu__logo:hover svg {
+  fill: @color-pink;
+}
+
+.main-menu__logo:active svg {
+  fill: @color-white;
+  opacity: 0.3;
+}
+
+.main-menu__logo-glasses,
+.main-menu__logo-stars {
+  display: none;
 }
 
 .main-menu__burger {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 20px;
   z-index: 5;
   display: block;
   width: 50px;
@@ -57,7 +66,8 @@
   color: @color-white;
   text-decoration: none;
   text-transform: uppercase;
-  .font-bold-18;
+  font-weight: bold;
+  font-size: 18px;
   box-shadow:
     inset 0 -1px 0 0 @color-black,
     inset 0 1px 0 0 rgb(72, 84, 97);
@@ -72,7 +82,10 @@
 @media @mobile-tablet-widths-only {
   .main-menu--closed {
       background-color: @color-black-30;
-      box-shadow: none;
+  }
+
+  .main-menu--closed .main-menu__top {
+    box-shadow: none;
   }
 
   .main-menu--closed .main-menu__burger::before {
@@ -144,35 +157,79 @@
   }
 }
 
+@media @tablet-widths {
+  .main-menu__top {
+    height: 110px;
+  }
+
+  .main-menu__logo {
+    margin-left: 40px;
+    padding-top: 26px;
+  }
+
+  .main-menu__logo-glasses {
+    display: block;
+  }
+
+  .main-menu--closed .main-menu__burger::before {
+    top: 25px;
+    right: 21px;
+  }
+}
+
 @media @desktop-widths {
   .main-menu {
     background-color: @color-black-30;
+
+  }
+
+  .main-menu__wrap {
     display: flex;
     justify-content: space-between;
   }
 
   .main-menu__top {
-    background-color: transparent;
-    box-shadow: none;
     width: 100px;
     margin: 0;
+    background-color: transparent;
+    box-shadow: none;
   }
+
+  .main-menu__logo {
+    margin-left: 130px;
+  }
+
+  // .main-menu__logo-stars {
+  //   display: block;
+  // }
 
   .main-menu__list {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    max-width: 800px;
-
-
+    max-width: 750px;
+    padding-right: 130px;
   }
 
   .main-menu__item a {
+    padding: 0;
+    margin-left: 42px;
+    margin-right: 42px;
     text-transform: none;
     font-size: 18px;
     font-weight: normal;
+    box-shadow: none;
   }
 
+  .main-menu__item--active a {
+    padding-bottom: 7px;
+    border-bottom: 2px solid @color-white;
+    &:hover {
+      border-color: @color-pink;
+    }
+  }
 
-
+  .main-menu__item:last-child a {
+    margin-right: 0;
+  }
 }
