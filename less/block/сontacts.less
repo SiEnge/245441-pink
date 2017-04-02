@@ -1,0 +1,137 @@
+.contacts {
+  text-align: center;
+  padding-top: 44px;
+}
+
+.contacts__intro {
+  display: block;
+  color: @color-dark-blue;
+  .font-light-24;
+  line-height: 27px;
+  margin-bottom: 37px;
+}
+
+.contacts__wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contacts__item {
+  padding-bottom: 24px;
+}
+
+.contacts__comm {
+  color: @color-blue;
+  .font-bold-18;
+  margin: 0;
+}
+
+.contacts__text {
+  color: @color-pink;
+  .font-light-24;
+  margin: 0;
+}
+
+.contacts__item--email:hover .contacts__text {
+  color: @color-blue;
+  text-decoration: underline;
+}
+
+.contacts__item--email:active .contacts__text {
+  color: @color-grey;
+}
+
+.contacts__map {
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+  z-index: 0;
+  iframe {
+    border: none;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.contacts__triangle svg {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+
+@media @tablet-widths {
+  .contacts {
+    padding-bottom: 10px;
+  }
+  .contacts__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    width: 250px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 47px;
+  }
+
+  .contacts__item:last-child {
+    padding-bottom: 25px;
+  }
+
+  .contacts__intro {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 46px;
+  }
+
+  .contacts__comm {
+    margin-bottom: 3px;
+  }
+
+  .contacts__map {
+    margin-top: 0;
+    iframe {
+      height: 378px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .contacts {
+    padding-top: 65px;
+  }
+
+  .contacts__wrap {
+    flex-wrap: nowrap;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .contacts__intro {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 55px;
+  }
+
+  .contacts__item {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .contacts__item--email {
+    order: 1;
+  }
+
+  .contacts__comm {
+    margin-bottom: 25px;
+  }
+
+  .contacts__map iframe {
+    height: 500px;
+  }
+}

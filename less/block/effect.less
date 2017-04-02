@@ -1,0 +1,124 @@
+.effect {
+  display: none;
+}
+
+@media @tablet-widths {
+  .effect {
+    display: block;
+    padding-bottom: 35px;
+  }
+
+  .effect__wrap {
+    display: flex;
+    padding-top: 57px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .effect__img {
+    position: relative;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icons/icon-timer.svg");
+    text-align: center;
+    background-size: 238px auto;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 20px;
+      left: 20px;
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: 15px solid @color-pink;
+    }
+  }
+
+  .effect__img-text {
+    display: block;
+    font-size: 100px;
+    font-weight: bold;
+    color: @color-pink;
+    padding-top: 140px;
+  }
+
+  .effect__block-text {
+    padding-top: 41xp;
+    padding-left: 70px;
+    max-width: 310px;
+  }
+
+  .effect__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+
+  .effect__text {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .effect__link {
+    color: @color-pink;
+  }
+}
+
+@media @desktop-widths {
+  .effect {
+    background-color: @color-grey;
+    padding-bottom: 65px;
+  }
+
+  .effect__wrap {
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .effect__img {
+    width: 298px;
+    height: 345px;
+    background-size: 298px auto;
+    &::before {
+      bottom: 25px;
+      left: 25px;
+      width: 210px;
+      height: 210px;
+      border-width: 20px;
+    }
+  }
+
+  .effect__img-text {
+    font-size: 130px;
+    padding-top: 180px;
+  }
+
+  .effect__block-text {
+    max-width: 570px;
+    padding-top: 87px;
+  }
+
+  .effect__title {
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    br {
+      display: none;
+    }
+  }
+
+  .effect__text {
+    padding-right: 50px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
