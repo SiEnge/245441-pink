@@ -1,6 +1,6 @@
 .contest-form__field {
   position: relative;
-  padding: 35px 20px 23px 20px;
+  padding: 18px 20px 25px 20px;
   margin: 0;
   border: none;
   &--bg-grey {
@@ -13,6 +13,7 @@
   position: absolute;
   left: 50%;
   top: 38px;
+  width: 240px;
   margin-left: -160px;
   padding: 0 40px;
   color: @color-pink;
@@ -26,8 +27,8 @@
 
 .contest-form__item {
   margin: 0;
-  margin-bottom: 17px;
-  display: inline;
+  padding-bottom: 17px;
+  display: block;
 }
 
 .contest-form__label {
@@ -71,7 +72,7 @@
   content: "";
   position: absolute;
   top: 22px;
-  left: 8px;
+  left: 1px;
   width: 35px;
   height: 35px;
   background-color: @color-white;
@@ -94,8 +95,8 @@
   display: block;
   font-size: 18px;
   padding-left: 68px;
-  padding-top: 29px;
-  padding-bottom: 29px;
+  padding-top: 26px;
+  padding-bottom: 25px;
 }
 
 .contest-form__radio-input {
@@ -105,8 +106,8 @@
 .contest-form__radio-label::before {
   content: "";
   position: absolute;
-  top: 22px;
-  left: 8px;
+  top: 19px;
+  left: 1px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -117,8 +118,8 @@
 .contest-form__radio-input:checked + .contest-form__radio-label::after {
   content: "";
   position: absolute;
-  top: 33px;
-  left: 19px;
+  top: 30px;
+  left: 13px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -139,8 +140,16 @@
   margin-bottom: 20px;
 }
 
-.contest-form__field-emotion .contest-form__legend {
-  top: 0;
+.contest-form__item-cont {
+  margin-bottom: 12px;
+}
+
+.contest-form__field-emotion {
+  padding-top: 55px;
+  padding-bottom: 43px;
+  .contest-form__legend {
+    top: 20px;
+  }
 }
 
 .contest-form__input-emotion {
@@ -177,7 +186,7 @@
 }
 
 .contest-form__comment {
-  padding: 10px;
+  padding: 25px 10px 20px 10px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -193,7 +202,7 @@
 @media @tablet-widths {
   .contest-form {
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
 
   .contest-form__wrap {
@@ -218,6 +227,9 @@
 
   .contest-form__legend {
     top: -9px;
+    width: 320px;
+    margin-left: -200px;
+
     background-color: @color-white;
     &--hidden {
       display: block;
@@ -227,7 +239,7 @@
   .contest-form__item {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 33px;
   }
 
   .contest-form__input {
@@ -239,6 +251,10 @@
     &--hidden {
       display: block;
     }
+  }
+
+  .contest-form__checkbox {
+    padding-left: 58px;
   }
 
   .contest-form__field-name  {
@@ -258,6 +274,10 @@
     padding: 30px 60px;
     margin-bottom: 60px;
     order: 1;
+    .contest-form__legend {
+      width: 400px;
+      margin-left: -240px;
+    }
   }
 
   .contest-form__field-contact {
@@ -271,12 +291,13 @@
     flex-direction: column-reverse;
     align-items: flex-start;
     margin-bottom: 13px;
+    z-index: 5;
     .contest-form__input {
       width: 100%;
       margin-left: 0;
     }
     .contest-form__label {
-      padding: 15px 20px;
+      padding: 12px 20px 15px 20px;
     }
     &::after {
       content: "";
@@ -289,10 +310,34 @@
     }
   }
 
+  .contest-form__cont-phone::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icons/icon-phone.svg");
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+
+  .contest-form__cont-mail::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    right: 21px;
+    width: 18px;
+    height: 14px;
+    background-image: url("../img/icons/icon-mail.svg");
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+
   .contest-form__field-emotion {
     padding: 45px 58px 43px 58px;
     order: 1;
-    margin-bottom: 65px;
+    margin-bottom: 70px;
     .contest-form__legend {
       top: -9px;
     }
@@ -321,7 +366,7 @@
 
 @media @desktop-widths {
   .contest-form {
-    padding-top: 63px;
+    padding-top: 44px;
   }
 
   .contest-form__wrap {
@@ -339,27 +384,34 @@
 
   .contest-form__field-app {
     width: 310px;
-    padding: 20px 60px;
+    padding: 32px 60px;
     margin: 0;
     margin-bottom: 65px;
   }
 
-  .contest-form__field-contact {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  .contest-form__item-wrap {
+    width: 375px;
+    display: inline-block;
+    padding-right: 66px;
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   .contest-form__item-cont {
-    width: 375px;
+    margin-bottom: 0;
   }
 
   .contest-form__field-progress {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 30px 15px 35px 60px;
+  }
+
+  .contest-form__col-progress {
+    width: 300px;
+    display: inline-block;
   }
 
   .contest-form__field-emotion {
@@ -371,10 +423,8 @@
     height: 130px;
   }
 
-  .contest-form__bottom {
-    display: flex;
-    justify-content: space-between;
-
+  .contest-form__btn {
+    margin-right: 50px;
   }
 
   .contest-form__comment--hidden {

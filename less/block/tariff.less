@@ -1,7 +1,7 @@
 .tariff {
   position: relative;
   background-color: @color-grey;
-  padding-top: 88px;
+  padding-top: 89px;
   padding-bottom: 69px;
   text-align: center;
   z-index: 0;
@@ -23,7 +23,7 @@
   margin-right: 40px;
   width: 620px;
   td {
-    min-swidth: 155px;
+    width: 150px;
     position: relative;
     border: 2px solid @color-dark-grey;
   }
@@ -48,8 +48,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: -3px;
-    left: -3px;
+    top: 0;
+    left: -2px;
     width: 61px;
     height: 61px;
     background: url("../img/icons/bg-hit-tablet.svg") no-repeat;
@@ -69,8 +69,13 @@
 }
 
 .tariff__table-col1 {
-  padding: 10px 10px;
+  padding: 10px 0 10px 10px;
+  width: 140px;
+  text-transform: none;
+  text-align: left;
 }
+
+
 
 .tariff__table-header--price {
   font-weight: lighter;
@@ -92,10 +97,6 @@
   border-left-color: @color-grey;
 }
 
-.tariff__table-col1 {
-  text-transform: none;
-  text-align: left;
-}
 
 .tariff__table-yes {
   font-size: 0;
@@ -216,7 +217,7 @@
 @media @desktop-widths {
   .tariff {
     padding-top: 150px;
-    padding-bottom: 92px;
+    padding-bottom: 100px;
   }
 
   .tariff__table {
@@ -226,7 +227,7 @@
   }
 
   .tariff__table-header td {
-      padding: 20px 25px;
+    padding: 20px 25px;
   }
 
   .tariff__table-col1 {

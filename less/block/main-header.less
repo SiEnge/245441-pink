@@ -1,6 +1,13 @@
 .main-header {
-  background: @color-blue url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
+  background-color: @color-blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom -226px;
   background-size: 700px auto;
+  &--position-index {
+    background-position-y: bottom 270px;
+  }
 }
 
 .main-header__img {
@@ -40,6 +47,10 @@
   .main-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 1200px auto;
+    background-position-y: bottom -289px;
+    &--position-index {
+      background-position-y: bottom;
+    }
   }
 
   .main-header__download {
@@ -85,11 +96,12 @@
   .main-header {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: 2560px auto;
+    background-position-y: top;
   }
 
   .main-header__img {
     height: 645px;
-    margin-left: -280px;
+    margin-left: -284px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px auto;
   }
