@@ -84,7 +84,7 @@
   content: "";
   position: absolute;
   top: 33px;
-  left: 17px;
+  left: 10px;
   width: 22px;
   height: 16px;
   background: url("../img/icons/icon-yes-pink.svg") no-repeat;
@@ -142,6 +142,9 @@
 
 .contest-form__item-cont {
   margin-bottom: 12px;
+  .contest-form__input {
+    height: 62px;
+  }
 }
 
 .contest-form__field-emotion {
@@ -293,7 +296,6 @@
     margin-bottom: 13px;
     z-index: 5;
     .contest-form__input {
-      width: 100%;
       margin-left: 0;
     }
     .contest-form__label {
@@ -389,16 +391,14 @@
     margin-bottom: 65px;
   }
 
-  .contest-form__item-wrap {
-    width: 375px;
-    display: inline-block;
-    padding-right: 66px;
-    &:last-child {
-      padding-right: 0;
-    }
+  .contest-form__field-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .contest-form__item-cont {
+    width: 375px;
     margin-bottom: 0;
   }
 
@@ -406,12 +406,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 30px 15px 35px 60px;
-  }
-
-  .contest-form__col-progress {
-    width: 300px;
-    display: inline-block;
+    padding: 30px 60px 35px 60px;
   }
 
   .contest-form__field-emotion {
@@ -423,8 +418,10 @@
     height: 130px;
   }
 
-  .contest-form__btn {
-    margin-right: 50px;
+  .contest-form__bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .contest-form__comment--hidden {
