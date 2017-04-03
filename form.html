@@ -60,50 +60,54 @@
         </fieldset>
         <fieldset class="contest-form__field contest-form__field--bg-grey contest-form__field-progress">
           <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
-          <div class="contest-form__col-progress contest-form__col-1-progress">
-            <label class="contest-form__checkbox" for="selfie-shark">
+          <div class="contest-form__wrap-progress">
+            <div class="contest-form__col-progress">
+              <label class="contest-form__checkbox" for="selfie-shark">
               <input class="contest-form__checkbox-input" type="checkbox" name="selfie-shark" id="selfie-shark">
               <span class="contest-form__checkbox-label">Сделал селфи с акулой</span>
             </label>
-            <label class="contest-form__checkbox" for="burn-beach">
+              <label class="contest-form__checkbox" for="burn-beach">
               <input class="contest-form__checkbox-input" type="checkbox" name="burn-beach" id="burn-beach">
               <span class="contest-form__checkbox-label">Обгорел на пляже</span>
             </label>
-          </div>
-          <div class="contest-form__col-progress contest-form__col-2-progress">
-            <label class="contest-form__checkbox" for="chuck-norris">
+            </div>
+            <div class="contest-form__col-progress">
+              <label class="contest-form__checkbox" for="chuck-norris">
               <input class="contest-form__checkbox-input" type="checkbox" name="chuck-norris" id="chuck-norris">
               <span class="contest-form__checkbox-label">Видел Чака Норриса</span>
             </label>
-            <label class="contest-form__checkbox" for="buy-souvenirs">
+              <label class="contest-form__checkbox" for="buy-souvenirs">
               <input class="contest-form__checkbox-input" type="checkbox" name="buy-souvenirs" id="buy-souvenirs">
               <span class="contest-form__checkbox-label">Накупил сувениров</span>
             </label>
-          </div>
-          <div class="contest-form__col-progress">
-            <label class="contest-form__checkbox" for="keep-tower">
+            </div>
+            <div class="contest-form__col-progress">
+              <label class="contest-form__checkbox" for="keep-tower">
               <input class="contest-form__checkbox-input" type="checkbox" name="keep-tower" id="keep-tower">
               <span class="contest-form__checkbox-label">Удержал башню</span>
             </label>
-            <label class="contest-form__checkbox" for="defeat-hotel">
+              <label class="contest-form__checkbox" for="defeat-hotel">
               <input class="contest-form__checkbox-input" type="checkbox" name="defeat-hotel" id="defeat-hotel">
               <span class="contest-form__checkbox-label">Разгромил отель</span>
             </label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="contest-form__field contest-form__field-contact">
           <legend class="contest-form__legend contest-form__legend--hidden">Контактная информация</legend>
-          <div class="contest-form__item-wrap">
-            <p class="contest-form__item-cont contest-form__cont-phone">
-              <label class="contest-form__label" for="phone">Номер телефона</label>
-              <input class="contest-form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-            </p>
-          </div>
-          <div class="contest-form__item-wrap">
-            <p class="contest-form__item-cont contest-form__cont-mail">
-              <label class="contest-form__label" for="mail">Адресок почты</label>
-              <input class="contest-form__input" type="email" name="mail" id="mail" placeholder="Введите почту *" required>
-            </p>
+          <div class="contest-form__wrap-contact">
+            <div class="contest-form__item-wrap">
+              <p class="contest-form__item-cont contest-form__cont-phone">
+                <label class="contest-form__label" for="phone">Номер телефона</label>
+                <input class="contest-form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+              </p>
+            </div>
+            <div class="contest-form__item-wrap">
+              <p class="contest-form__item-cont contest-form__cont-mail">
+                <label class="contest-form__label" for="mail">Адресок почты</label>
+                <input class="contest-form__input" type="email" name="mail" id="mail" placeholder="Введите почту *" required>
+              </p>
+            </div>
           </div>
         </fieldset>
         <fieldset class="contest-form__field contest-form__field--bg-grey contest-form__field-app">
@@ -192,6 +196,7 @@
     </div>
   </div>
   <script src="js/scripts.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>
