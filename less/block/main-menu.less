@@ -72,7 +72,7 @@
 
 @media @mobile-tablet-widths-only {
   .main-menu--closed {
-      background-color: @color-black-30;
+    background-color: @color-black-30;
   }
 
   .main-menu--closed .main-menu__top {
@@ -105,12 +105,18 @@
     }
   }
 
-  .main-menu--nojs .main-menu__burger {
+  .main-menu--closed .main-menu__list {
     display: none;
   }
 
-  .main-menu--closed .main-menu__list {
-    display: none;
+  .main-menu--nojs {
+    background-color: @color-blue;
+    .main-menu__list {
+      display: block;
+    }
+    .main-menu__burger {
+      display: none;
+    }
   }
 }
 
@@ -118,6 +124,7 @@
   .main-menu__top {
     height: 110px;
   }
+
   .main-menu__wrap {
     padding-left: 40px;
     padding-right: 40px;
